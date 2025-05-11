@@ -78,4 +78,4 @@ Para projetos mais complexos, serão adicionados documentos suplementares com es
 
 A experiência adquirida no programa ONE tem sido fundamental para o desenvolvimento das minhas habilidades técnicas e para consolidar uma mentalidade de aprendizado contínuo e foco em soluções eficientes.
 
-➡️ Voltar para o [Portfólio Principal](../../../README.md) *(Ajustar caminho relativo conforme a organização final do repositório)*""
+➡️ Voltar para o [Portfólio Principal](../../../README.md)""
