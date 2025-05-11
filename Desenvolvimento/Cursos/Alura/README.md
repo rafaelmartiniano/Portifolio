@@ -1,25 +1,5 @@
 # ![](https://www.alura.com.br/assets/img/depoimentos/oracle-one/logotipo-one.1730889067.svg)
 
-## 🚀 Sobre mim...
-
-Olá, sou **Rafael Martiniano**, estudante do programa **ONE - Oracle Next Education**.
-
-Sou apaixonado por tecnologia, especialmente no campo de **front-end**. Atualmente, estou focado em **HTML**, **CSS**, **JavaScript** e busco sempre aprimorar minhas habilidades em design responsivo e experiência do usuário. Além disso, estou aprendendo sobre as melhores práticas para o desenvolvimento de software.
-
-Tenho grande interesse também nas tecnologias das gigantes **Microsoft**, **Oracle**, **Cisco**, **Fortigate** e outros, especialmente na área de Inteligência Artificial (**IA**).
-
-Estou animado com minha jornada na programação web, e busco sempre aplicar meus conhecimentos em projetos reais e desafios práticos. Meu objetivo é criar soluções inovadoras, seguras e contribuir para a comunidade de desenvolvedores.
-
----
-
-### 🔗 Conecte-se comigo no LinkedIn:
-
-<a href="https://www.linkedin.com/in/rafael-martiniano?trk=profile-badge" target="_blank" style="text-decoration: none;">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-</a>
-
----
-
 ## Sobre o **ONE**
 
 **ONE** (Oracle Next Education) é um programa de educação, inclusão e empregabilidade da **Oracle**. É uma oportunidade única de capacitação em tecnologia para pessoas que buscam ingressar no mercado de trabalho, oferecendo formação em **desenvolvimento de software** e outras áreas.
@@ -61,6 +41,8 @@ Além disso, estou praticando as melhores práticas em **controle de versão com
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://rmartinione.github.io/Challenge-AluraOne) 
 ![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
 
+---
+
 ## 📝 Blog e Artigos
 
 Nesta seção, gostaria de compartilhar um pouco do conteúdo aprendido no curso.
@@ -94,9 +76,11 @@ Confira todas as mudanças e melhorias no projeto acessando o [Changelog](https:
 
 ---
 
-## Minhas estatísticas ##
+## Minhas estatísticas
 
 ![rmartinione's Stats](https://github-readme-stats.vercel.app/api?username=rmartinione&theme=tokyonight&show_icons=true&hide_border=false&count_private=false)
+
+---
 
 ## Status do Projetos: Em Andamento
 
@@ -107,22 +91,3 @@ Veja
 ```bash
   comando <subcomando>
      resultado_Subcomando(#"Sempre_Em_Evolução"#)
-```
-
-## Sobre referência de segurança da Oracle
-
-Segurança no Oracle  
-
-Este documento contém diretrizes e referências sobre segurança em projetos que utilizam tecnologias Oracle.  
-
-## Links úteis  
-
-- [Segurança no Oracle Database](https://docs.oracle.com/en/database/oracle/oracle-database/)  
-- [Oracle Cloud Security](https://www.oracle.com/cloud/security/)  
-- [Oracle Data Safe – Proteção de Dados](https://www.oracle.com/database/technologies/data-safe.html)  
-
-## Melhorias Futuras  
-- Implementar criptografia de dados no Oracle.  
-- Explorar autenticação segura com Oracle Identity Cloud.
-
----

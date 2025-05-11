@@ -1,37 +1,38 @@
-![thumbnail-Desafio Java](https://user-images.githubusercontent.com/66698429/225426397-327dc314-7e00-4ed7-8875-e68d0317e995.png)
+# Exercício: MusicasPreferidas (Java Aplicando POO)
 
+Este projeto foi desenvolvido como um exercício prático durante a minha formação em Java no programa Alura & Oracle ONE, com foco na aplicação dos conceitos fundamentais da Programação Orientada a Objetos (POO). Este exercício específico está contido na pasta `JavaAplicandoPOO`.
 
-# Desafio
+## 🎯 Objetivo do Exercício
 
+O objetivo principal deste exercício foi **criar um sistema simples para gestão de músicas e podcasts, modelando as classes e suas interações utilizando os princípios da POO**: abstração, encapsulamento, herança e polimorfismo.
 
-Vamos implementar uma aplicação para cadastrar nossas músicas e podcasts preferidos, modelando as classes utilizando os conceitos de orientação a objetos: abstração, herança, encapsulamento e polimorfismo. 
+## ✨ Funcionalidades e Aprendizados Principais
 
-## 🔨 Objetivos do projeto
+Durante o desenvolvimento deste sistema, foram implementadas e exploradas as seguintes funcionalidades e conceitos:
 
-- Criar uma classe **Audio** com os atributos (titulo, totalReproducoes, totalCurtidas e classificacao).
-- Utilizar encapsulamento, deixando os atributos privados e criando os *getters* e *setters* para acessar e modificar os atributos.
-- Criar dois métodos sem retorno: curte() e reproduz(), que irão incrementar as variáveis totalCurtidas e totalReproducoes, respectivamente.
-- Organizar o código em pacotes.
-- Criar uma classe **Musica** estendendo de Audio, com os atributos adicionais **album**, **cantor** e **genero**.
-- Criar uma classe **Podcast** estendendo de Audio, com os atributos adicionais **apresentador** e **descricao**.
-- Criar uma classe Principal e instancie um objeto do tipo Musica e outro do tipo Podcast, preenchendo seus atributos;
-- Criar um loop para chamar os métodos curte() e reproduz() a fim de simular um número grande de reproduções e curtidas.
-- Fazer uma sobrescrita do método *getClassificacao* na classe Musica, definindo que se a mesma tiver mais de 2000 **reproduções** a classificação será 10 e para valores inferiores a classificação será 8.
-- Fazer uma sobrescrita do método *getClassificacao* na classe Podcast, definindo que se o mesmo tiver mais de 500 **curtidas** a classificação será 10 e para valores inferiores, a classificação será 7.
-- Criar uma classe chamada **MusicasPreferidas** ou apenas **Preferencias**, com um método sem retorno (void) chamado *inclui*, que receberá como parâmetro um Audio.
-- No método inclui, trabalharemos o polimorfismo, onde iremos utilizar o *getClassificacao* (de acordo com a subclasse que for passada aqui como parâmetro) para exibir alguma mensagem. Para classificação igual ou superior a 9, iremos imprimir no terminal uma mensagem e se for inferior, imprimiremos uma outra mensagem.
-- Finalizar instanciando um objeto do tipo **MusicasPreferidas** ou **Preferencias** e incluindo a música e podcast instanciados anteriormente.
+* **Modelagem de Classes:** Criação de uma classe base `Audio` e classes derivadas `Musica` e `Podcast`.
+* **Encapsulamento:** Utilização de atributos privados com getters e setters.
+* **Herança:** Reutilização de código e especialização de comportamento das classes `Musica` e `Podcast` a partir de `Audio`.
+* **Polimorfismo:** Demonstração através de métodos sobrescritos (como `getClassificacao()`) e o tratamento de objetos `Audio` de forma genérica.
+* **Gestão de Coleções (Básica):** Criação de uma classe para simular uma lista de "preferidas".
+* **Lógica de Negócio Simples:** Implementação de regras para classificação de músicas e podcasts baseadas em reproduções e curtidas.
 
+## 🛠️ Tecnologias e Conceitos Aplicados
 
-<p></p>
+* **Linguagem Principal:** Java
+* **Paradigma:** Programação Orientada a Objetos (POO)
+* **Conceitos Chave:** Classes, Objetos, Atributos, Métodos, Construtores, Herança, Polimorfismo, Encapsulamento.
+* **Ambiente de Desenvolvimento:** JDK 17 (ou superior), IntelliJ IDEA (ou outra IDE Java).
 
-Exemplo/Sugestão de mensagem a exibir para classificação superio e inferior a 9. 
+## 🚀 Como Executar
 
-<p></p>
+O projeto é uma aplicação de consola Java e pode ser executado da seguinte forma (após compilação):
 
+```bash
+# Compilar os ficheiros .java (exemplo, se não estiver a usar uma IDE com build automático,
+# e assumindo que está na pasta que contém a estrutura de pacotes com/rm/musicaspreferidas):
+# javac com/rm/musicaspreferidas/modelos/*.java com/rm/musicaspreferidas/principal/*.java
+# java com.rm.musicaspreferidas.principal.Principal
 
-![mensagem](https://user-images.githubusercontent.com/66698429/225436483-20234ade-8dbd-4136-99be-d255fe20e5a4.PNG)
-
-
-
-Bom desafio!
+# Se um JAR executável for gerado (MusicasPreferidas.jar):
+java -jar MusicasPreferidas.jar

@@ -1,40 +1,33 @@
-# 7 Days of Code - Lógica de Programação
+# Exercício: 7 Days of Code - JavaScript
 
-Este repositório contém os desafios do "7 Days of Code" focados em lógica de programação, desenvolvidos durante os estudos na plataforma Alura.
+Este projeto faz parte da minha jornada de aprendizado na formação Alura & Oracle ONE, especificamente dentro da categoria de exercícios de JavaScript.
 
-## Propósito
+## 🎯 Objetivo do Exercício
 
-O objetivo deste projeto é praticar e aprimorar habilidades em lógica de programação através de desafios diários. Cada desafio aborda um conceito diferente e visa fortalecer o raciocínio lógico e a capacidade de resolver problemas.
+O principal objetivo deste conjunto de desafios diários ("7 Days of Code") foi **praticar e consolidar conceitos essenciais da linguagem JavaScript**. Através de pequenos problemas e implementações diárias, pude reforçar a minha compreensão sobre manipulação de dados, lógica de programação e interatividade no contexto do navegador.
 
-## Desafios
+## ✨ Funcionalidades e Aprendizados Principais
 
-O projeto é composto por sete desafios, cada um correspondendo a um dia da semana:
+Durante este exercício, trabalhei com:
 
-*   **1º Dia:** Desafio de comparação de variáveis.
-*   **2º Dia:** Desafio de perguntas e respostas com o usuário.
-*   **3º Dia:** Desafio de lista de compras.
-*   **4º Dia:** Desafio do número aleatório.
-*   **5º Dia:** Desafio da calculadora.
-*   **6º Dia:** Desafio de conversão de temperaturas.
-*   **7º Dia:** Desafio final (a ser definido).
+* **Manipulação do DOM (Document Object Model):** Alteração dinâmica de conteúdo HTML e estilos CSS através de JavaScript.
+* **Lógica de Programação Aplicada:** Resolução de problemas práticos utilizando estruturas condicionais, loops, funções e manipulação de arrays/objetos.
+* **Eventos do Navegador:** Captura e tratamento de interações do utilizador (cliques, entradas de teclado, etc.).
+* **Conceitos Fundamentais de JS:** Variáveis, tipos de dados, operadores, escopo e funções.
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias e Conceitos Aplicados
 
-*   HTML
-*   CSS
-*   JavaScript
+* **Linguagem Principal:** JavaScript (ES6+)
+* **Ambiente:** Navegador Web (para interação com DOM e eventos)
+* **Conceitos:** Lógica de programação, manipulação de DOM, eventos, funções.
 
-## Como Usar
+## 🚀 Como Executar
 
-1.  Clone este repositório para sua máquina local.
-2.  Navegue até o diretório do desafio que deseja resolver.
-3.  Abra o arquivo HTML correspondente no seu navegador.
-4.  Siga as instruções fornecidas na página para completar o desafio.
+*(A forma de execução pode variar dependendo de cada desafio diário específico dentro do "7 Days of Code". Geralmente, envolve abrir um ficheiro HTML num navegador.)*
 
-## Contribuições
+```bash
+# Exemplo genérico para um desafio que use Node.js (se aplicável a algum dos dias):
+# node src/diaX/index.js
 
-Contribuições são bem-vindas! Se você tiver alguma sugestão de melhoria ou correção, sinta-se à vontade para abrir uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
+# Para desafios baseados em navegador:
+# Abrir o ficheiro HTML correspondente ao dia do desafio num navegador web.

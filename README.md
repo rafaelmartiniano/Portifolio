@@ -1,102 +1,83 @@
-# Rafael Martiniano (RM) - Desenvolvedor em Formação e Entusiasta de Tecnologia
+""# Formação Alura & Oracle ONE (Oracle Next Education)
 
-![](https://www.alura.com.br/assets/img/depoimentos/oracle-one/logotipo-one.1730889067.svg)
-
-## 🚀 Perfil Profissional
-
-Olá! Sou **Rafael Martiniano**, um profissional em desenvolvimento de software com uma paixão genuína por tecnologia e inovação. A minha jornada é marcada por uma dedicação contínua ao aprendizado e à aplicação prática de conhecimentos em desenvolvimento front-end, com incursões no back-end e um interesse crescente em Inteligência Artificial.
-
-Atualmente, estou a consolidar a minha formação através do programa **ONE (Oracle Next Education)**, em parceria com a Alura, e a cursar **Gestão da Tecnologia da Informação** na Estácio. O meu objetivo é aplicar as minhas competências para criar soluções tecnológicas eficazes, seguras e que proporcionem uma excelente experiência ao utilizador, contribuindo ativamente para projetos desafiadores e para a comunidade de desenvolvimento.
-
-Busco oportunidades onde possa aplicar e expandir os meus conhecimentos, especialmente em ambientes que valorizem a inovação e o desenvolvimento de soluções que integram tecnologias de ponta.
+Bem-vindo à seção do meu portfólio dedicada aos estudos, desafios e projetos desenvolvidos durante o programa **ONE (Oracle Next Education)**, uma parceria entre a **Oracle** e a **Alura**. Esta área centraliza os principais projetos e práticas realizadas, refletindo o conhecimento adquirido em desenvolvimento de software.
 
 ---
 
-### 🔗 Conecte-se Comigo
+## 🚀 **Sobre o Programa**
 
-* **LinkedIn:** [Rafael Martiniano](https://www.linkedin.com/in/rafael-martiniano?trk=profile-badge)
-    * <a href="https://www.linkedin.com/in/rafael-martiniano?trk=profile-badge" target="_blank" style="text-decoration: none;">
-        <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-        </a>
+O programa ONE tem sido um marco essencial na minha formação, permitindo um aprendizado profundo e prático em desenvolvimento de software. Através de projetos reais e desafios práticos, consolidei conhecimentos nas seguintes áreas:
 
----
-
-## 💡 Experiência em Desenvolvimento e Aprendizado Aplicado
-
-A minha trajetória tem sido focada na aquisição e aplicação de conhecimentos práticos através de projetos e desafios. As minhas principais áreas de experiência e estudo incluem:
-
-### Desenvolvimento Web (Front-End)
-Com uma base sólida em **HTML5, CSS3 e JavaScript**, desenvolvi projetos que demonstram competência na criação de interfaces de utilizador responsivas, interativas e focadas na experiência do utilizador. A minha abordagem inclui a aplicação de conceitos de design moderno e a otimização para diferentes dispositivos.
-* **Projetos de Destaque:** Incluem desafios práticos do programa ONE/Alura, como [nome de um projeto front-end, ex: Decodificador de Texto ou Amigo Secreto, se aplicável] e outras iniciativas pessoais. (Links podem ser adicionados na secção "Portfólio de Projetos").
-
-### Desenvolvimento Back-End (Java)
-Através de desafios e estudos, tenho aplicado conceitos de Programação Orientada a Objetos em Java, incluindo a criação de aplicações de consola, consumo de APIs externas, manipulação de dados (JSON com GSon) e tratamento de erros. Esta experiência está a preparar-me para o desenvolvimento de sistemas mais complexos e APIs REST.
-* **Projetos de Destaque:** Desenvolvimento de aplicações como um Conversor de Moedas com consulta a API externa, Sistema de Consulta de CEP, entre outros desafios do programa ONE/Alura. (Links na secção "Portfólio de Projetos").
-
-### Inteligência Artificial (IA)
-Com um forte interesse em IA, obtive a certificação **Microsoft AI-900 (Azure AI Fundamentals)**, que solidificou a minha compreensão dos conceitos de Machine Learning, Processamento de Linguagem Natural e Visão Computacional. Tenho explorado ativamente Modelos de Linguagem Grandes (LLMs) como o **Google Gemini**, analisando as suas aplicações práticas e potencial de integração em soluções de software.
-* **Foco:** Aplicação de IA para otimizar processos, melhorar a interação com o utilizador e explorar novas funcionalidades em projetos.
-* Veja mais em: [Estudos e Aplicações em Inteligência Artificial](./Desenvolvimento/IA_Estudos_Aplicacoes/README.md) *(Link para a secção detalhada)*.
-
-### Formação Académica e Contínua
-* **Superior em Gestão da Tecnologia da Informação (Cursando) - Estácio:** Aprofundando conhecimentos em gestão de projetos de TI, governança, infraestrutura e as bases teóricas que complementam o desenvolvimento prático.
-* **Programa ONE (Oracle Next Education) em parceria com Alura:** Formação intensiva em desenvolvimento de software, abrangendo tecnologias front-end, back-end (Java), lógica de programação, Git/GitHub e metodologias ágeis.
-* **(Opcional: Citar outros cursos relevantes, como Ready.Tec - TSystem, se já houver conteúdo)**
+* **Front-End:** Construção de interfaces responsivas e interativas utilizando HTML5, CSS3 e JavaScript, com foco em experiência do usuário (UX).
+* **Back-End (Java):** Desenvolvimento de lógica de negócio com Programação Orientada a Objetos (POO), integração com APIs externas, manipulação de dados em JSON e aplicações robustas em Java.
+* **Lógica de Programação:** Resolução de problemas algorítmicos, fortalecendo a capacidade de análise e otimização de código.
+* **Boas Práticas:** Controle de versão com Git e GitHub, e introdução a metodologias ágeis para gestão organizada de projetos.
 
 ---
 
-## 📂 Portfólio de Projetos e Estudos
+## 🏷️ **Tecnologias Utilizadas**
 
-Este repositório (`HomeMain`) está estruturado para apresentar os meus trabalhos de forma organizada. Convido-o a explorar as diferentes secções:
-
-* **[Formação Alura & Oracle ONE](./Desenvolvimento/Alura/README.md)**: Contém os desafios e projetos desenvolvidos como parte do programa ONE, demonstrando a aplicação prática dos conceitos aprendidos.
-* **[Projetos Pessoais](./Desenvolvimento/Projetos/README.md)**: Iniciativas próprias onde exploro novas tecnologias e desenvolvo soluções para problemas específicos.
-* **[Estudos e Aplicações em Inteligência Artificial](./Desenvolvimento/IA_Estudos_Aplicacoes/README.md)**: Detalhes sobre os meus estudos, certificações e experimentações na área de IA.
-* **[Formação Académica - Estácio](./Desenvolvimento/Estacio/README.md)** *(Em construção)*: Projetos e trabalhos relevantes da minha graduação.
-* **[Outras Formações](./Desenvolvimento/OutrasFormacoes/README.md)** *(Em construção, para cursos como Ready.Tec)*
-
-*(Links diretos para projetos de maior destaque serão adicionados aqui à medida que o portfólio evolui.)*
-
----
-
-## 🛠️ Competências Técnicas e Ferramentas
-
-* **Linguagens de Programação:** JavaScript, Java, HTML5, CSS3.
-* **Front-End:** Design Responsivo, Experiência do Utilizador (UX/UI princípios básicos).
-* **Back-End (em desenvolvimento):** Conceitos de API REST, Spring Boot (em estudo).
-* **Inteligência Artificial:** Fundamentos de IA (AI-900), LLMs (Gemini).
-* **Ferramentas e Controlo de Versão:** Git, GitHub, VS Code, IntelliJ IDEA.
-* **Outras Tecnologias de Interesse:** Microsoft Azure, Oracle Cloud, Cisco, Fortigate.
-* **Metodologias:** Agile (conceitos básicos).
-
-**Badges:**
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
-![Azure](https://img.shields.io/badge/microsoft%20azure-%230078D4.svg?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/rmartinione/HomeMain)
-![Git](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E)
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge\&logo=openjdk\&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge\&logo=html5\&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge\&logo=css3\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge\&logo=git\&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge\&logo=github\&logoColor=white)
+![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge\&logo=intellij-idea\&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual_Studio_Code-0078d7.svg?style=for-the-badge\&logo=visual-studio-code\&logoColor=white)
 
 ---
 
-## Documentação Adicional
+## 📂 **Estrutura dos Projetos** (`Portifolio/Desenvolvimento/Cursos/Alura/`)
 
-* **[Código de Conduta](./CODE_OF_CONDUCT.md)**: O meu compromisso com um ambiente colaborativo respeitoso e inclusivo.
-* **[Política de Segurança](./SECURITY.md)**: Informações sobre como reportar questões de segurança.
+""### 1️⃣ **JavaScript**
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E)""
+Organizado para explorar manipulação de DOM, interatividade em páginas web e lógica de programação:
+
+* **[Exercícios](./Javascript/Exercicios/README.md):** Pequenos projetos para prática de conceitos fundamentais.
+
+  * `7daysofcodeJS`
+  * *(Outros exercícios serão listados e documentados em seus respectivos `README.md`)*
+
+* **[Challenges](./Javascript/Challenge/README.md):** Projetos práticos com foco em front-end.
+
+  * `challenge-amigo-secreto`
+  * *(Outros challenges serão listados aqui e documentados em seus respectivos `README.md`)*
 
 ---
 
-## Minhas Estatísticas no GitHub
+""### 2️⃣ **Java**
+![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge\&logo=openjdk\&logoColor=white)""
+Reúne projetos e desafios focados em Java, organizados em:
 
-![rmartinione's Stats](https://github-readme-stats.vercel.app/api?username=rmartinione&theme=tokyonight&show_icons=true&hide_border=false&count_private=false)
+* **[Exercícios](./Java/Exercicios/README.md):** Atividades práticas para reforçar conceitos específicos.
 
-## Status do Portfólio: Em Construção e Evolução Contínua
+  * `JavaAplicandoPOO/MusicasPreferidas`: Sistema de músicas e podcasts.
+  * `JavaConsumindoAPIRWArqTrataErro`: Consulta de CEP, manipulação de JSON e tratamento de erros.
+  * `JavaListaColecoesDados`: Gestão de cartões de crédito com coleções.
+  * `JavaPrimeiraAplicacao`: Aplicação bancária inicial em Java.
+  * *(Outros exercícios serão listados e documentados em seus respectivos `README.md`)*
 
-Este portfólio é um reflexo da minha jornada de aprendizado e desenvolvimento. Estou constantemente a adicionar novos projetos e a aprimorar as minhas competências.
+* **[Challenges](./Java/Challenge/README.md):** Projetos completos que integram múltiplos conceitos de desenvolvimento.
 
-> "A jornada nunca termina. Sempre haverá novas aventuras nos aguardando!"
+  * `ChallengeConversordeMoedas`: Conversor de moedas com consumo de API externa.
+  * *(Outros challenges serão listados aqui e documentados em seus respectivos `README.md`)*
 
-```bash
-  comando <subcomando>
-     resultado_Subcomando(#"Sempre_Em_Evolução"#)
+---
+
+## 📌 **Documentação e Detalhes Técnicos**
+
+Cada projeto possui (ou possuirá) um arquivo `README.md` detalhado, descrevendo:
+
+* Objetivos do projeto;
+* Tecnologias utilizadas;
+* Funcionalidades principais;
+* Estrutura de diretórios.
+
+Para projetos mais complexos, serão adicionados documentos suplementares com especificações técnicas e detalhes de implementação.
+
+---
+
+A experiência adquirida no programa ONE tem sido fundamental para o desenvolvimento das minhas habilidades técnicas e para consolidar uma mentalidade de aprendizado contínuo e foco em soluções eficientes.
+
+➡️ Voltar para o [Portfólio Principal](../../../README.md) *(Ajustar caminho relativo conforme a organização final do repositório)*""
