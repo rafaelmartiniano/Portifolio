@@ -12,9 +12,9 @@
      * Projeto do desafio de Java da Alura + Oracle.
      * Customizações e comentários explicativos por RM.
      *
-     * @author RM
-     * @version 1.0
-     * @date 09 de Maio de 2025
+     * @autor RM
+     * @versão 1.0
+     * @data to custom tags 09 de Maio de 2025
      */
     public enum Moeda {
         // Moedas da América do Sul
@@ -97,9 +97,10 @@
         }
     }
     
-    //==========================================
-    // Feito por RM By Alura+Oracle
-    // Projeto: Conversor de Moedas Console
-    // Data: 09 de Maio de 2025
-    //==========================================
-    
+                           /*
+                            ==========================================
+                             Feito por RAFAEL MARTINIANO By Alura+Oracle
+                             Projeto: Conversor de Moedas Console
+                             Data: 09 de Maio de 2025
+                            ==========================================
+                            */

@@ -1,0 +1,6 @@
+com\rm\conversorconsole\service\ConversorServico.class
+com\rm\conversorconsole\app\Principal.class
+com\rm\conversorconsole\client\TaxaCambioCliente.class
+com\rm\conversorconsole\client\TaxaCambioClienteImpl.class
+com\rm\conversorconsole\dto\TaxaCambioApiResponse.class
+com\rm\conversorconsole\enums\Moeda.class

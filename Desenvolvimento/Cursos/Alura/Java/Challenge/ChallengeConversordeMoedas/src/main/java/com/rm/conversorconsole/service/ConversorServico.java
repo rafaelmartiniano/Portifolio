@@ -24,9 +24,9 @@ import java.util.Locale;
  * Projeto do desafio de Java da Alura + Oracle.
  * Customizações e comentários explicativos por RM.
  *
- * @author RM
- * @version 1.2 // Versão atualizada devido à correção na formatação da data (usando VV)
- * @date 09 de Maio de 2025
+ * @autor RM
+ * @versão 1.2 // Versão atualizada devido à correção na formatação da data (usando VV)
+ * @data 09 de Maio de 2025
  */
 public class ConversorServico {
 
@@ -82,8 +82,9 @@ public class ConversorServico {
             return "ERRO: O valor para conversão deve ser positivo.";
         }
         if (moedaOrigem == moedaDestino) {
-            return "As moedas de origem e destino são iguais. Nenhuma conversão necessária.\n" +
-                    "Valor: " + moedaOrigem.name() + " " + formatadorValor.format(valor);
+            return """
+                   As moedas de origem e destino são iguais. Nenhuma conversão necessária.
+                   Valor: """ + moedaOrigem.name() + " " + formatadorValor.format(valor);
         }
 
         try {
@@ -138,8 +139,10 @@ public class ConversorServico {
     }
 }
 
-//==========================================
-// Feito por RM By Alura+Oracle
-// Projeto: Conversor de Moedas Console
-// Data: 09 de Maio de 2025
-//==========================================
+                            /*
+                            ==========================================
+                             Feito por RAFAEL MARTINIANO By Alura+Oracle
+                             Projeto: Conversor de Moedas Console
+                             Data: 09 de Maio de 2025
+                            ==========================================
+                            */

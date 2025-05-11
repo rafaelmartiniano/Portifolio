@@ -1,15 +1,13 @@
-
-    //===============================================================================
+//===============================================================================
     // PACOTE: com.rm.conversorconsole.client
     // ARQUIVO: TaxaCambioCliente.java
     // PROJETO: Conversor de Moedas Console (Backend)
     //===============================================================================
     package com.rm.conversorconsole.client;
     
-    import com.rm.conversorconsole.dto.TaxaCambioApiResponse;
     import com.rm.conversorconsole.enums.Moeda;
-    
     import java.io.IOException;
+    import com.rm.conversorconsole.dto.TaxaCambioApiResponse;
     
     /**
      * Interface para o cliente que busca taxas de câmbio de uma API externa.
@@ -42,9 +40,11 @@
                 throws IOException, InterruptedException, RuntimeException;
     }
     
-    //==========================================
-    // Feito por RM By Alura+Oracle
-    // Projeto: Conversor de Moedas Console
-    // Data: 09 de Maio de 2025
-    //==========================================
-    
+                            /*
+                            ==========================================
+                             Feito por RAFAEL MARTINIANO By Alura+Oracle
+                             Projeto: Conversor de Moedas Console
+                             Data: 09 de Maio de 2025
+                            ==========================================
+                            */
+

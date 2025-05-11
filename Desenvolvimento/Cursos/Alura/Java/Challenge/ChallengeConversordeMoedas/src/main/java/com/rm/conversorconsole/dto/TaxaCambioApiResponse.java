@@ -18,9 +18,9 @@
      * @param time_last_update_unix Timestamp Unix da última atualização da taxa.
      * @param time_last_update_utc String da data/hora UTC da última atualização.
      *
-     * @author RM
-     * @version 1.0
-     * @date 09 de Maio de 2025
+     * @autor RM
+     * @versão 1.0
+     * @data 09 de Maio de 2025
      */
     public record TaxaCambioApiResponse(
             String base_code,         // Ex: "USD"
@@ -40,9 +40,10 @@
         //-------------------------------------------------------------------------------
     }
     
-    //==========================================
-    // Feito por RM By Alura+Oracle
-    // Projeto: Conversor de Moedas Console
-    // Data: 09 de Maio de 2025
-    //==========================================
-    
+                           /*
+                            ==========================================
+                             Feito por RAFAEL MARTINIANO By Alura+Oracle
+                             Projeto: Conversor de Moedas Console
+                             Data: 09 de Maio de 2025
+                            ==========================================
+                            */
