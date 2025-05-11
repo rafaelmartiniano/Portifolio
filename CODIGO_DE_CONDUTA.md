@@ -36,7 +36,7 @@ Este Código de Conduta se aplica a todos os espaços da comunidade, e também s
 
 ## Execução
 
-Instâncias de comportamento abusivo, de assédio ou de outra forma inaceitável podem ser reportadas aos líderes da comunidade responsáveis pela execução em [COLOQUE SEU EMAIL OU MÉTODO DE CONTATO AQUI]. Todas as reclamações serão revisadas e investigadas prontamente e de maneira justa.
+Instâncias de comportamento abusivo, de assédio ou de outra forma inaceitável podem ser reportadas aos líderes da comunidade responsáveis pela execução em [rmartini3corp@outlook.com]. Todas as reclamações serão revisadas e investigadas prontamente e de maneira justa.
 
 Todos os líderes da comunidade são obrigados a respeitar a privacidade e a segurança de quem reportar qualquer incidente.
 
