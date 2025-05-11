@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Days of Code - Quarto Desafio</title>
     <link rel="stylesheet" href="../../style/styles.css">
-    <script src="configquarto.js" defer></script>  <!-- Corrigido o link -->
+    <script src="configquarto.js" defer></script>
 </head>
 <body class="desafio">
     <header class="cabecalho">
@@ -14,19 +14,16 @@
     <main class="principal">
         <section class="conteudo">
             <h1>Quarto Desafio: Adivinhação de Números</h1>
-            <p class="mensagem">Instruções: Escolha um dos desafios abaixo.</p>
-            
-            <!-- Contêiner para os botões "Desafio Fixo" e "Desafio Aleatório" -->
+            <p class="mensagem">Instruções: Escolha um dos modos de jogo de adivinhação abaixo.</p>
+
             <div class="botao-container">
-                <button id="botao-iniciar1" class="botao botao-iniciar" aria-label="Iniciar Desafio Fixo">Desafio Fixo</button>
-                <button id="botao-iniciar2" class="botao botao-iniciar" aria-label="Iniciar Desafio Aleatório">Desafio Aleatório</button>
+                <button id="botao-iniciar-fixo" class="botao botao-iniciar" aria-label="Iniciar Desafio Fixo">Adivinhar Número Fixo</button>
+                <button id="botao-iniciar-aleatorio" class="botao botao-iniciar" aria-label="Iniciar Desafio Aleatório">Adivinhar Número Aleatório</button>
             </div>
-            
-            <!-- Botão "Jogar Novamente" -->
-            <button id="botao-reiniciar" class="botao botao-jogar-novamente" style="display: none;" aria-label="Jogar Novamente">Jogar Novamente</button>
+
+            <button id="botao-reiniciar" class="botao botao-jogar-novamente" style="display: none;" aria-label="Jogar Novamente">Escolher Outro Modo / Jogar Novamente</button>
             <br>
-            
-            <!-- Botão "Voltar" -->
+
             <button onclick="window.location.href='../../index.html'" class="botao botao-voltar" aria-label="Voltar para a página inicial">Voltar</button>
         </section>
     </main>

@@ -6,27 +6,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const botaoVoltar = document.querySelector('.botao-voltar');
 
     // Mensagem inicial do Segundo Desafio
-    mensagem.textContent = "Bem-vindo ao Segundo Desafio! Neste desafio, você deverá responder algumas perguntas, Clique em iniciar.";
+    mensagem.innerHTML = "Bem-vindo ao Segundo Desafio! Você continuará analisando variáveis. <strong>Os resultados serão exibidos no console.</strong> Clique em iniciar.";
 
     botaoIniciar.addEventListener('click', function(){
+        alert("Lembre-se de abrir o console do seu navegador (pressione F12 e vá para a aba 'Console') para ver os resultados deste desafio.");
         // Oculta a mensagem e o botão iniciar
         mensagem.style.display = 'none';
         botaoIniciar.style.display = 'none';
-        
+
         // Carrega o arquivo de desafio
         const script = document.createElement('script');
         script.src = 'secondchallenge.js';
-        script.defer = true; // Garante que o script será executado após o carregamento da página
+        script.defer = true;
         document.body.appendChild(script);
 
-        botaoReiniciar.style.display = 'block'; // Mostra o botão "Jogar Novamente"
+        botaoReiniciar.style.display = 'block';
     });
 
-    // Evento para o botão Jogar Novamente
     botaoReiniciar.addEventListener('click', function(){
-        location.reload(); // Recarrega a página
+        location.reload();
     });
-    // Evento para o botão Voltar
+
     botaoVoltar.addEventListener('click', function(){
         window.location.href='../../index.html';
     });

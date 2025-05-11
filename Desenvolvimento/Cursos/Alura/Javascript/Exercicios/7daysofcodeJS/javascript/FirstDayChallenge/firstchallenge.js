@@ -1,36 +1,33 @@
-// ** Criando as Variaveis ** //
-let primeiroNumero = 1;
-let primeiraString = '1';
-let segundoNumero = 30;
-let segundaString = '30';
-let terceiroNumero = 10;
-let terceiraString = '10';
+// javascript/FirstDayChallenge/configprimeiro.js
+document.addEventListener("DOMContentLoaded", function() {
+    const mensagem = document.querySelector(".mensagem");
+    const botaoIniciar = document.getElementById("botao-iniciar");
+    const botaoReiniciar = document.getElementById('botao-reiniciar');
+    const botaoVoltar = document.querySelector('.botao-voltar');
 
-//------------------- Separador --------------------//
-alert('Iniciando programa, clique em ok para continuar!');
-alert('O programa fará a análise. Se estiver correto, conseguirá ver as instruções, mas se estiver errado, corrija o erro de sintaxe.');
-alert('Clique em ok para iniciar!');
+    // Mensagem inicial do Primeiro Desafio
+    mensagem.innerHTML = "Bem-vindo ao Primeiro Desafio! Você analisará comparações de variáveis. <strong>Os resultados serão exibidos no console do navegador.</strong> Clique em iniciar.";
 
-// **Criando condição de comparação para as variaveis**//
-if (primeiroNumero == primeiraString) {
-    console.log("As variáveis primeiroNumero e primeiraString são de valores iguais, mas com tipos de variáveis diferentes");
-} else {
-    console.log('As variáveis primeiroNumero e primeiraString são de valores diferentes e não têm o mesmo valor');
-}
+    botaoIniciar.addEventListener('click', function(){
+        alert("Lembre-se de abrir o console do seu navegador (pressione F12 e vá para a aba 'Console') para ver os resultados deste desafio.");
+        // Oculta a mensagem e o botão iniciar
+        mensagem.style.display = 'none';
+        botaoIniciar.style.display = 'none';
 
-if (segundoNumero == segundaString) {
-    console.log('As variáveis segundoNumero e segundaString são de valores iguais, mas com tipos de variáveis diferentes');
-} else {
-    console.log('As variáveis segundoNumero e segundaString são de valores diferentes e não têm o mesmo valor');
-}
+        // Carrega o arquivo de desafio
+        const script = document.createElement('script');
+        script.src = 'firstchallenge.js';
+        script.defer = true;
+        document.body.appendChild(script);
 
-if (terceiroNumero == terceiraString) {
-    console.log('As variáveis terceiroNumero e terceiraString são de valores iguais, mas com tipos de variáveis diferentes');
-} else {
-    console.log('As variáveis terceiroNumero e terceiraString são de valores diferentes e não têm o mesmo valor');
-}
+        botaoReiniciar.style.display = 'block';
+    });
 
-alert('Fim do programa, veja o resultado!');
-//------------------- Separador --------------------//
+    botaoReiniciar.addEventListener('click', function(){
+        location.reload();
+    });
 
-// ** Fim da Condição e do programa ** //
+    botaoVoltar.addEventListener('click', function(){
+        window.location.href='../../index.html';
+    });
+});

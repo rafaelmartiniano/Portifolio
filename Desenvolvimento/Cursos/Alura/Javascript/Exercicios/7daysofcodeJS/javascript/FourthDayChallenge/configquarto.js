@@ -1,68 +1,68 @@
+// javascript/FourthDayChallenge/configquarto.js
 document.addEventListener("DOMContentLoaded", function () {
     const mensagem = document.querySelector(".mensagem");
-    const botaoIniciarFixo = document.getElementById('botao-iniciar1');
-    const botaoIniciarAleatorio = document.getElementById('botao-iniciar2');
+    // IDs dos botões corrigidos para corresponder ao HTML revisado
+    const botaoIniciarFixo = document.getElementById('botao-iniciar-fixo');
+    const botaoIniciarAleatorio = document.getElementById('botao-iniciar-aleatorio');
     const botaoReiniciar = document.getElementById('botao-reiniciar');
     const botaoVoltar = document.querySelector('.botao-voltar');
+    const containerBotoesEscolha = document.querySelector('.botao-container');
 
-    mensagem.textContent = "Bem-vindo ao Quarto Desafio! Escolha o desafio que deseja fazer.";
+    mensagem.textContent = "Bem-vindo ao Quarto Desafio! Escolha o modo de jogo de adivinhação.";
 
-    function exibirBotoesIniciar() {
-        mensagem.style.display = 'block';
-        botaoIniciarFixo.style.display = "block";
-        botaoIniciarAleatorio.style.display = "block";
-    }
-
-    function limparScript() {
-        const scripts = document.querySelectorAll('script[src^="javascript/FourthChallenge"]');
-        scripts.forEach(script => script.remove());
-    }
-
-    // Função para carregar um script de desafio de forma segura
-    function carregarScript(scriptSrc) {
-        const scriptExistente = document.querySelector(`script[src="${scriptSrc}"]`);
-        if (!scriptExistente) {
-            const script = document.createElement('script');
-            script.src = scriptSrc;
-            script.defer = true;
-            document.body.appendChild(script);
-        }
-    }
-
-    // Evento para o botão de Desafio Fixo
-    botaoIniciarFixo.addEventListener('click', () => {
+    function ocultarEscolhasEMostrarReiniciar() {
         mensagem.style.display = 'none';
-        botaoIniciarFixo.style.display = "none";
-        botaoIniciarAleatorio.style.display = "none";
+        if (containerBotoesEscolha) containerBotoesEscolha.style.display = "none"; // Oculta o container dos botões de escolha
         botaoReiniciar.style.display = 'block';
-        limparScript();
-        carregarScript('Alura/alura_repositorio/7daysofcode/javascript/FourthDayChallenge/FourthChallenge-fixo.js');  // Link corrigido
-    });
+    }
 
-    // Evento para o botão de Desafio Aleatório
-    botaoIniciarAleatorio.addEventListener('click', () => {
-        mensagem.style.display = 'none';
-        botaoIniciarFixo.style.display = "none";
-        botaoIniciarAleatorio.style.display = "none";
-        botaoReiniciar.style.display = 'block';
-        limparScript();
-        carregarScript('Alura/alura_repositorio/7daysofcode/javascript/FourthDayChallenge/FourthChallenge-aleatorio.js');  // Link corrigido
-    });
-
-    // Evento para o botão de reiniciar
-    botaoReiniciar.addEventListener('click', function () {
-        limparScript();  // Limpar scripts antigos
+    function mostrarEscolhasEOcultarReiniciar() {
         mensagem.style.display = 'block';
-        botaoIniciarFixo.style.display = "block";
-        botaoIniciarAleatorio.style.display = "block";
+        if (containerBotoesEscolha) containerBotoesEscolha.style.display = "flex"; // ou 'block', dependendo do seu CSS para .botao-container
         botaoReiniciar.style.display = 'none';
+        // Remove scripts de desafios anteriores para evitar múltiplas execuções
+        limparScriptsDesafio();
+    }
+
+    function limparScriptsDesafio() {
+        // Ajuste no seletor para pegar qualquer script carregado por este config
+        const scripts = document.querySelectorAll('script[src*="FourthChallenge"]');
+        scripts.forEach(script => {
+            if (script.src.includes("FourthChallenge-fixo.js") || script.src.includes("FourthChallenge-aleatorio.js")) {
+                script.remove();
+            }
+        });
+    }
+
+    function carregarScriptDesafio(scriptSrc) {
+        limparScriptsDesafio(); // Garante que não haja scripts duplicados
+        const script = document.createElement('script');
+        // Caminho corrigido: assume que os scripts estão na mesma pasta que configquarto.js
+        script.src = scriptSrc; 
+        script.defer = true;
+        document.body.appendChild(script);
+    }
+
+    botaoIniciarFixo.addEventListener('click', () => {
+        ocultarEscolhasEMostrarReiniciar();
+        // Caminho corrigido
+        carregarScriptDesafio('FourthChallenge-fixo.js'); 
     });
 
-    // Evento para o botão Voltar
+    botaoIniciarAleatorio.addEventListener('click', () => {
+        ocultarEscolhasEMostrarReiniciar();
+        // Caminho corrigido
+        carregarScriptDesafio('FourthChallenge-aleatorio.js'); 
+    });
+
+    botaoReiniciar.addEventListener('click', function () {
+        mostrarEscolhasEOcultarReiniciar();
+    });
+
     botaoVoltar.addEventListener('click', () => {
-        window.location.href = '../../index.html'; // Redireciona para a página inicial
+        window.location.href = '../../index.html';
     });
 
-    // Exibe os botões de iniciar
-    exibirBotoesIniciar();
+    // Estado inicial
+    mostrarEscolhasEOcultarReiniciar();
 });

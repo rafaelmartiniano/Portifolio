@@ -1,53 +1,57 @@
+console.log("script.js (principal) carregado e executando.");
 document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM Principal carregado.");
     const botoesGradiente = document.querySelectorAll('.botao-gradiente');
     const botaoTemaEscuro = document.getElementById('botao-tema-escuro');
     const botaoTemaClaro = document.getElementById('botao-tema-claro');
 
+    // Animação para os botões de desafio na página inicial
     botoesGradiente.forEach(botao => {
-        botao.addEventListener('click', function(event) {
-            event.preventDefault(); // Prevent the default navigation behavior
-            window.location.href = botao.href; // Navigate to the link
-        });
-
-        // Simple animation for the button
         botao.addEventListener('mouseover', function() {
-            botao.style.transform = 'scale(1.1)';
-            botao.style.transition = 'transform 0.2s ease';
-            botao.style.cursor = 'pointer';
+            // A animação de hover será controlada pelo CSS para consistência
         });
-
         botao.addEventListener('mouseout', function() {
-            botao.style.transform = 'scale(1)';
-            botao.style.transition = 'transform 0.2s ease';
+            // A animação de hover será controlada pelo CSS
         });
+        // A navegação é feita pelo href do link, não precisa de JS extra aqui.
     });
 
-    botaoTemaEscuro.addEventListener('click', function() {
-        document.body.classList.add('tema-escuro');
-        document.body.classList.remove('tema-claro');
-    });
-
-    botaoTemaClaro.addEventListener('click', function() {
-        document.body.classList.remove('tema-escuro');
-        document.body.classList.add('tema-claro');
-    });
-
-    // Responsiveness for mobile/tablet
-    window.addEventListener('resize', function() {
-        if (window.innerWidth <= 480) {
-            document.body.style.fontSize = '14px';
-        } else {
-            document.body.style.fontSize = '16px';
+    // --- Lógica de Tema ---
+    const aplicarTema = (tema) => {
+        if (tema === 'dark-theme') {
+            document.body.classList.add('dark-theme');
+            document.body.classList.remove('light-theme');
+        } else { // Inclui 'light-theme' ou qualquer outro caso (default)
+            document.body.classList.remove('dark-theme');
+            document.body.classList.add('light-theme');
         }
-    });
+    };
+
+    if (botaoTemaEscuro) {
+        botaoTemaEscuro.addEventListener('click', function() {
+            aplicarTema('dark-theme');
+            localStorage.setItem('theme', 'dark-theme');
+        });
+    }
+
+    if (botaoTemaClaro) {
+        botaoTemaClaro.addEventListener('click', function() {
+            aplicarTema('light-theme');
+            localStorage.setItem('theme', 'light-theme');
+        });
+    }
+
+    // Carregar tema salvo ao iniciar a página ou usar preferência do sistema/default
+    const temaSalvo = localStorage.getItem('theme');
+    if (temaSalvo) {
+        aplicarTema(temaSalvo);
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        aplicarTema('dark-theme');
+    } else {
+        aplicarTema('light-theme'); // Padrão
+    }
+    // --- Fim da Lógica de Tema ---
+
+    // Responsividade via JS removida, pois o CSS é mais apropriado para isso (Media Queries)
 });
 
-document.getElementById('botao-tema-escuro').addEventListener('click', () => {
-    document.body.classList.add('dark-theme');
-    document.body.classList.remove('light-theme');
-});
-
-document.getElementById('botao-tema-claro').addEventListener('click', () => {
-    document.body.classList.add('light-theme');
-    document.body.classList.remove('dark-theme');
-});

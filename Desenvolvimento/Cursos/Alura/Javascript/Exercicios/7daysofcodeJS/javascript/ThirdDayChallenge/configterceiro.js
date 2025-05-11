@@ -1,34 +1,36 @@
-// javascript/ThirdDayChallenge/configterceiro.js
 document.addEventListener("DOMContentLoaded", function() {
-    const mensagem = document.querySelector(".mensagem");
+    const mensagemElemento = document.querySelector(".mensagem"); // Renomeado
     const botaoIniciar = document.getElementById("botao-iniciar");
     const botaoReiniciar = document.getElementById('botao-reiniciar');
     const botaoVoltar = document.querySelector('.botao-voltar');
 
-    // Mensagem inicial do Terceiro Desafio
-    mensagem.textContent = "Bem-vindo ao Terceiro Desafio! Neste desafio, você deverá fazer escolhas sobre áreas e tecnologias. Clique em iniciar.";
+    if (mensagemElemento) {
+        mensagemElemento.textContent = "Bem-vindo ao Terceiro Desafio! Você fará escolhas sobre áreas e tecnologias para sua carreira. Clique em iniciar.";
+    }
 
-    botaoIniciar.addEventListener('click', function(){
-        // Oculta a mensagem e o botão iniciar
-        mensagem.style.display = 'none';
-        botaoIniciar.style.display = 'none';
-        
-        // Carrega o arquivo de desafio
-        const script = document.createElement('script');
-        script.src = 'thirdchallenge.js';
-        script.defer = true; // Garante que o script será executado após o carregamento da página
-        document.body.appendChild(script);
+    if (botaoIniciar) {
+        botaoIniciar.addEventListener('click', function(){
+            if (mensagemElemento) mensagemElemento.style.display = 'none';
+            botaoIniciar.style.display = 'none';
 
-        botaoReiniciar.style.display = 'block'; // Mostra o botão "Jogar Novamente"
-    });
+            const script = document.createElement('script');
+            script.src = 'thirdchallenge.js';
+            script.defer = true;
+            document.body.appendChild(script);
 
-    // Evento para o botão Jogar Novamente
-    botaoReiniciar.addEventListener('click', function(){
-        location.reload(); // Recarrega a página
-    });
+            if (botaoReiniciar) botaoReiniciar.style.display = 'block';
+        });
+    }
 
-    // Evento para o botão Voltar
-    botaoVoltar.addEventListener('click', function(){
-        window.location.href='../../index.html';
-    });
+    if (botaoReiniciar) {
+        botaoReiniciar.addEventListener('click', function(){
+            location.reload();
+        });
+    }
+
+    if (botaoVoltar) {
+        botaoVoltar.addEventListener('click', function(){
+            window.location.href='../../index.html';
+        });
+    }
 });
