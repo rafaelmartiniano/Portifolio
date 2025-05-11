@@ -1,4 +1,4 @@
-""# Formação Alura & Oracle ONE (Oracle Next Education)
+ ""# Formação Alura & Oracle ONE (Oracle Next Education)
 
 Bem-vindo à seção do meu portfólio dedicada aos estudos, desafios e projetos desenvolvidos durante o programa **ONE (Oracle Next Education)**, uma parceria entre a **Oracle** e a **Alura**. Esta área centraliza os principais projetos e práticas realizadas, refletindo o conhecimento adquirido em desenvolvimento de software.
 
@@ -30,8 +30,7 @@ O programa ONE tem sido um marco essencial na minha formação, permitindo um ap
 
 ## 📂 **Estrutura dos Projetos** (`Portifolio/Desenvolvimento/Cursos/Alura/`)
 
-""### 1️⃣ **JavaScript**
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E)""
+""### 1️ ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge\&logo=javascript\&logoColor=%23F7DF1E)""
 Organizado para explorar manipulação de DOM, interatividade em páginas web e lógica de programação:
 
 * **[Exercícios](./Javascript/Exercicios/README.md):** Pequenos projetos para prática de conceitos fundamentais.
@@ -46,8 +45,7 @@ Organizado para explorar manipulação de DOM, interatividade em páginas web e 
 
 ---
 
-""### 2️⃣ **Java**
-![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge\&logo=openjdk\&logoColor=white)""
+""### 2️⃣ ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge\&logo=openjdk\&logoColor=white)""
 Reúne projetos e desafios focados em Java, organizados em:
 
 * **[Exercícios](./Java/Exercicios/README.md):** Atividades práticas para reforçar conceitos específicos.
