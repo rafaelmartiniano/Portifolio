@@ -8,15 +8,15 @@ Se você descobrir uma vulnerabilidade de segurança em algum dos meus projetos,
 
 **Como reportar:**
 
-* Envie um e-mail para: `[SEU_EMAIL_PARA_CONTATO_DE_SEGURANCA_AQUI]`
+* Envie um e-mail para: `rmartini3corp@outlook.com`
 * Por favor, inclua uma descrição detalhada da vulnerabilidade, os passos para reproduzi-la e, se possível, o impacto potencial.
 * Não divulgue publicamente a vulnerabilidade até que haja uma oportunidade de análise e correção.
 
 **O que esperar:**
 
-* Uma confirmação do recebimento do seu relatório (geralmente em 48 horas).
+* Uma confirmação do recebimento do seu relatório (O mais breve possível).
 * Uma avaliação da vulnerabilidade e um plano de ação, se aplicável.
-* Crédito pela descoberta, se desejar, após a correção (para projetos onde isso seja relevante).
+* Crédito pela descoberta, se desejar, após a correção (para projetos).
 
 ## Práticas de Segurança Adotadas (Quando Aplicável)
 
