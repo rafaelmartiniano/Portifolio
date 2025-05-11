@@ -5,6 +5,8 @@
 *.idea
 *.sublime-project
 *.sublime-workspace
+*.gitignore
+*.gitattributes
 *.iml
 *.classpath
 *.project
