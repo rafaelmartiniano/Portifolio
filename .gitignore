@@ -1,40 +1,67 @@
 #Arquivo de configuração para ignorar arquivos do repositório e subir online
 
-## Ignorar arquivos de configuração do sistema
-*.vscode
-*.idea
-*.sublime-project
-*.sublime-workspace
-*.gitignore
-*.gitattributes
-*.iml
-*.classpath
-*.project
-*.settings
-*~*
-*.log
-*.tmp
-*.bak
-*.swp
-*.swo
-*.DS_Store
+# Ignorar arquivos de configuração do IDE e Linguagem
+
+#JAVA
+# Compiled class file
 *.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
 *.jar
 *.war
+*.nar
 *.ear
 *.zip
-*.tar
-*.gz
-*.tgz
-*.bz2
-*.xz
-*.7z
-*.rar
 *.tar.gz
-*.tar.bz2
-*.cmd
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+# Eclipse
+.classpath
+.project
+.settings/
+.metadata/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbproject/Makefile-Debug.mk
+nbproject/Makefile-Release.mk
+nbproject/Makefile-Default.mk
+
+#SO - Windows
+# Thumbs.db
+Thumbs.db
+# Desktop.ini
+Desktop.ini
+# Windows Installer files
+*.cab
+# Windows shortcuts
+*.lnk
+# Windows image file caches
+ehthumbs.db
+# Windows Command Prompt history
 *.bat
-*.exe
-*.dll
-*.so
-*.dylib
+
+
