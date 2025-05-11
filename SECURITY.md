@@ -27,6 +27,6 @@ Se você descobrir uma vulnerabilidade de segurança em algum dos meus projetos,
 
 ## Escopo
 
-Esta política de segurança aplica-se aos projetos contidos neste repositório `HomeMain`. Vulnerabilidades em serviços de terceiros utilizados (como APIs externas) devem ser reportadas diretamente aos respetivos fornecedores.
+Esta política de segurança aplica-se aos projetos contidos neste repositório `Principal`. Vulnerabilidades em serviços de terceiros utilizados (como APIs externas) devem ser reportadas diretamente aos respetivos fornecedores.
 
 Obrigado por ajudar a manter os projetos seguros!
