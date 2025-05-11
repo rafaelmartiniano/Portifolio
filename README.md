@@ -1,4 +1,4 @@
- ### Formação Alura & Oracle ONE (Oracle Next Education)
+ # Formação Alura & Oracle ONE (Oracle Next Education)
 
 Bem-vindo à seção do meu portfólio dedicada aos estudos, desafios e projetos desenvolvidos durante o programa **ONE (Oracle Next Education)**, uma parceria entre a **Oracle** e a **Alura**. Esta área centraliza os principais projetos e práticas realizadas, refletindo o conhecimento adquirido em desenvolvimento de software.
 
@@ -78,4 +78,4 @@ Para projetos mais complexos, serão adicionados documentos suplementares com es
 
 A experiência adquirida no programa ONE tem sido fundamental para o desenvolvimento das minhas habilidades técnicas e para consolidar uma mentalidade de aprendizado contínuo e foco em soluções eficientes.
 
-➡️ Voltar para o [Portfólio Principal](../../../README.md)""
+➡️ Voltar para o [Portfólio Principal](../../../README.md)
