@@ -1,0 +1,835 @@
+/* Reset de Estilos */
+@import url('base/reset.css');
+@import url('base/typography.css');
+
+/* Componentes */
+@import url('components/buttons.css');
+@import url('components/header.css');
+@import url('components/footer.css');
+
+/* Layout */
+@import url('layout/grid.css');
+@import url('layout/hero.css');
+@import url('layout/intro.css');
+@import url('layout/navbar.css');
+
+/* ===== Variáveis CSS ===== */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --text-color: #333;
+  --background-color: #f4f4f4;
+  --dark-primary-color: #2980b9;
+  --dark-secondary-color: #27ae60;
+  --dark-text-color: #eee;
+  --dark-background-color: #222;
+  --transition-speed: 0.3s ease;
+}
+
+/* ===== Estilos Gerais ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* ===== Tema Dark ===== */
+body[data-theme='dark'] {
+  --text-color: var(--dark-text-color);
+  --background-color: var(--dark-background-color);
+}
+
+/* ===== Tema Claro e Escuro ===== */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body[data-theme='dark'] {
+  --background-color: #121212;
+  --text-color: #ffffff;
+  --primary-color: #1e88e5;
+  --secondary-color: #43a047;
+}
+
+body[data-theme='light'] {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+}
+
+/* ===== Header ===== */
+.header {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+.nav__link:hover {
+  color: var(--secondary-color);
+}
+
+/* ===== Intro Section ===== */
+.intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 4rem 0;
+}
+
+.intro-content {
+  flex: 1;
+}
+
+.intro-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.intro-subtitle {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.computer-animation {
+  flex: 1;
+  text-align: center;
+}
+
+.computer-animation img {
+  max-width: 80%;
+  height: auto;
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===== Botões Personalizados ===== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: #fff;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+/* ===== Highlights Section ===== */
+.highlights {
+  padding: 4rem 0;
+}
+
+.section-title {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.highlight-card {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__socials {
+  margin-bottom: 1rem;
+}
+
+.footer__social-link {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.footer__text {
+  margin: 0.5rem 0;
+}
+
+/* ===== Fundo com Gradiente Animado ===== */
+.background-gradient {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, #1e1e2f, #2a2a3d, #3a3a4f);
+  background-size: 300% 300%;
+  animation: gradientAnimation 15s ease infinite;
+  z-index: -1;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* ===== Tema Terminal ===== */
+.terminal {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo semi-transparente */
+  color: #0f0;
+  font-family: 'Courier Prime', monospace;
+  padding: 2rem;
+  border-radius: 10px;
+  margin: 0 auto; /* Removido o margin para melhor controle */
+  max-width: 800px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  height: 100%; /* Adicionado para ocupar toda a altura */
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-header {
+  background-color: #222;
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  color: #fff;
+}
+
+.terminal-body {
+  padding: 1rem;
+  flex-grow: 1; /* Para ocupar o espaço restante */
+  overflow-y: auto; /* Adicionado para rolagem se o conteúdo for muito grande */
+}
+
+.terminal-line {
+  margin: 0.5rem 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.terminal-links {
+  margin-top: 1rem;
+}
+
+.btn-terminal {
+  display: inline-block;
+  background-color: #0f0;
+  color: #000;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-terminal:hover {
+  background-color: #0c0;
+  transform: translateY(-3px);
+}
+
+/* ===== Botão Voltar ao Topo ===== */
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#back-to-top:hover {
+  transform: scale(1.1);
+}
+
+/* ===== Preloader ===== */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #fff;
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ===== Estilo do Computador ===== */
+.computer {
+  width: 90%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #2a2a3d;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.computer-screen {
+  background-color: #1e1e2f;
+  border-radius: 15px 15px 0 0;
+  padding: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.computer-base {
+  height: 20px;
+  background-color: #444;
+  border-radius: 0 0 15px 15px;
+  width: 100%;
+}
+
+.computer-keyboard {
+  width: 90%;
+  height: 50px;
+  background-color: #555;
+  margin-top: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.computer-keyboard::before {
+  content: '';
+  width: 80%;
+  height: 30px;
+  background-color: #666;
+  border-radius: 3px;
+  display: block;
+}
+
+.computer-mouse {
+  width: 40px;
+  height: 60px;
+  background-color: #666;
+  margin-top: 20px;
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.computer-mouse::before {
+  content: '';
+  width: 10px;
+  height: 20px;
+  background-color: #444;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Ajuste para o banner */
+.banner {
+  position: relative;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-color);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para a seção de contato */
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-form legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .intro-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .computer-animation {
+    margin-top: 2rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Ajustes para o terminal em telas menores */
+  .terminal {
+    padding: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
+  }
+
+  .terminal-line {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .terminal {
+    padding: 0.5rem;
+  }
+
+  .terminal-line {
+    font-size: 0.8rem;
+  }
+}
+
+/* Botão de Desligar */
+.power-button {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.power-button:hover {
+  transform: scale(1.1);
+  background-color: #ff1a1a;
+}
+
+/* Animação de desligamento */
+body.shutdown {
+  animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    background-color: black;
+  }
+}
+
+/* Botão de Voltar */
+.back-button {
+  background-color: var(--secondary-color);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.back-button:hover {
+  background-color: var(--dark-secondary-color);
+}
+
+/* Popup de Ajuda */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  overflow: auto;
+  animation: fadeIn 0.5s ease;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.popup-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 5px;
+  animation: slideDown 0.5s ease;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.close-button:hover {
+  color: #ff0000;
+}
+
+
+
+/* Animações */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Popup de Ajuda no Formato de Terminal */
+/* Posiciona a popup à esquerda do monitor */
+.popup {
+  display: none;
+  position: absolute; /* Alterado para absolute */
+  top: 50%; /* Centralizado verticalmente */
+  left: 0px; /* Ajustado para ficar mais próximo do monitor */
+  transform: translateY(-50%); /* Ajuste para centralização vertical */
+  width: 50%; /* Reduzi o tamanho para 50% */
+  max-width: 400px; /* Ajustei a largura máxima */
+  background-color: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+  color: #333; /* Cor do texto para preto */
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra mais suave */
+  z-index: 1000;
+}
+
+/* Estilo para o botão de ajuda */
+.help-btn {
+  background-color: #2196F3; /* Cor azul destacada */
+  color: white;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;  /* Ajuste conforme o layout */
+  right: 20px;  /* Ajuste conforme o layout */
+  z-index: 1000;
+  font-family: 'Courier Prime', monospace;
+}
+
+.help-btn:hover {
+  background-color: #1976D2; /* Azul mais escuro no hover */
+}
+
+.help-btn i {
+  margin-right: 8px; /* Espaço entre o ícone e o texto */
+}
+
+.popup .terminal-header {
+  background-color: #eee; /* Cor do cabeçalho para cinza claro */
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup .terminal-title {
+  color: #333; /* Cor do título para preto */
+}
+
+.popup .close-button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px; /* Define um tamanho fixo para o botão */
+  height: 40px;
+  border-radius: 50%; /* Deixa o botão redondo */
+}
+
+.popup .close-button:hover {
+  color: #d9534f;
+  transform: scale(1.2);
+}
+
+.popup .close-button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(217, 83, 79, 0.5);
+}
+
+.popup .terminal-body {
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.popup .terminal-line {
+  margin: 0.5rem 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  color: #333; /* Cor do texto para preto */
+}
+
+/* Reset e Tipografia */
+@import url('base/reset.css');
+@import url('base/typography.css');
+
+/* Estilos Globais */
+:root {
+  --primary-color: #00aaff; /* Exemplo, adicione sua cor principal */
+  --secondary-color: #667eea; /* Exemplo, cor de apoio */
+  --text-color: #fff; /* Cor de texto */
+  --background-color: #1a1a1a; /* Cor de fundo */
+  --highlight-color: #ffcc00; /* Cor de destaque */
+  --footer-bg: #2a2a2a; /* Cor de fundo do rodapé */
+  --footer-text: #fff; /* Cor do texto do rodapé */
+}
+
+/* Geral */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Adicionando espaçamento global */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: #0077b5; /* Cor azul */
+  text-decoration: none; /* Remove o sublinhado (opcional) */
+}
+
+a:hover {
+  color: #005fa3; /* Azul mais escuro ao passar o mouse */
+  text-decoration: underline; /* Pode adicionar um sublinhado no hover (opcional) */
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: var(--highlight-color);
+}
+

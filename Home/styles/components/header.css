@@ -1,0 +1,54 @@
+/* Estilização do header (barra de navegação) */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+.nav__brand a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav__link:hover {
+  color: var(--secondary-color);
+}
+
+/* Cabeçalho com Banner para outras páginas */
+.header {
+  position: relative; /* Posição relativa */
+  background: url('../assets/Banner_Home_Desktop.png?v=2') no-repeat center center/cover; /* Imagem para desktop */
+  height: 70vh; /* Altura reduzida para evitar que fique gigante */
+  display: flex; /* Flexbox */
+  align-items: center; /* Alinha itens ao centro verticalmente */
+  justify-content: center; /* Alinha itens ao centro horizontalmente */
+  color: var(--text-color); /* Cor do texto */
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+}
+
+/* Ajuste do banner no mobile para outras páginas */
+@media (max-width: 768px) {
+  .header {
+    background: url('../assets/Banner_Home_Mobile.png?v=2') no-repeat center center/cover; /* Imagem para mobile */
+    height: 40vh; /* Reduz ainda mais no mobile */
+  }
+}

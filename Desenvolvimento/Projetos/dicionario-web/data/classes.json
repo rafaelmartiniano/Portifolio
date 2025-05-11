@@ -1,0 +1,698 @@
+[
+  {
+    "classe": "container",
+    "descricao": "Container principal",
+    "exemplo": "<div class='container'>Conteúdo</div>",
+    "resultado": "<div class='container'>Conteúdo</div>"
+  },
+  {
+    "classe": "text-center",
+    "descricao": "Centralizar texto",
+    "exemplo": "<p class='text-center'>Texto centralizado</p>",
+    "resultado": "<p class='text-center'>Texto centralizado</p>"
+  },
+  {
+    "classe": "btn",
+    "descricao": "Botão",
+    "exemplo": "<button class='btn'>Botão</button>",
+    "resultado": "<button class='btn'>Botão</button>"
+  },
+  {
+    "classe": "btn-primary",
+    "descricao": "Botão primário",
+    "exemplo": "<button class='btn btn-primary'>Botão</button>",
+    "resultado": "<button class='btn btn-primary'>Botão</button>"
+  },
+  {
+    "classe": "btn-secondary",
+    "descricao": "Botão secundário",
+    "exemplo": "<button class='btn btn-secondary'>Botão</button>",
+    "resultado": "<button class='btn btn-secondary'>Botão</button>"
+  },
+  {
+    "classe": "hidden",
+    "descricao": "Elementos ocultos",
+    "exemplo": "<div class='hidden'>Conteúdo oculto</div>",
+    "resultado": "<div class='hidden'>Conteúdo oculto</div>"
+  },
+  {
+    "classe": "flex",
+    "descricao": "Layout flexível",
+    "exemplo": "<div class='flex'></div>",
+    "resultado": "<div class='flex'></div>"
+  },
+  {
+    "classe": "flex-row",
+    "descricao": "Layout flexível em linha",
+    "exemplo": "<div class='flex flex-row'></div>",
+    "resultado": "<div class='flex flex-row'></div>"
+  },
+  {
+    "classe": "flex-column",
+    "descricao": "Layout flexível em coluna",
+    "exemplo": "<div class='flex flex-column'></div>",
+    "resultado": "<div class='flex flex-column'></div>"
+  },
+  {
+    "classe": "grid",
+    "descricao": "Layout em grade",
+    "exemplo": "<div class='grid'></div>",
+    "resultado": "<div class='grid'></div>"
+  },
+  {
+    "classe": "grid-item",
+    "descricao": "Item de grade",
+    "exemplo": "<div class='grid-item'></div>",
+    "resultado": "<div class='grid-item'></div>"
+  },
+  {
+    "classe": "card",
+    "descricao": "Cartão de conteúdo",
+    "exemplo": "<div class='card'></div>",
+    "resultado": "<div class='card'></div>"
+  },
+  {
+    "classe": "card-header",
+    "descricao": "Cabeçalho do cartão",
+    "exemplo": "<div class='card card-header'></div>",
+    "resultado": "<div class='card card-header'></div>"
+  },
+  {
+    "classe": "card-body",
+    "descricao": "Corpo do cartão",
+    "exemplo": "<div class='card card-body'></div>",
+    "resultado": "<div class='card card-body'></div>"
+  },
+  {
+    "classe": "alert",
+    "descricao": "Alerta",
+    "exemplo": "<div class='alert'></div>",
+    "resultado": "<div class='alert'></div>"
+  },
+  {
+    "classe": "alert-success",
+    "descricao": "Alerta de sucesso",
+    "exemplo": "<div class='alert alert-success'></div>",
+    "resultado": "<div class='alert alert-success'></div>"
+  },
+  {
+    "classe": "alert-danger",
+    "descricao": "Alerta de erro",
+    "exemplo": "<div class='alert alert-danger'></div>",
+    "resultado": "<div class='alert alert-danger'></div>"
+  },
+  {
+    "classe": "modal",
+    "descricao": "Modal",
+    "exemplo": "<div class='modal'></div>",
+    "resultado": "<div class='modal'></div>"
+  },
+  {
+    "classe": "modal-content",
+    "descricao": "Conteúdo do modal",
+    "exemplo": "<div class='modal modal-content'></div>",
+    "resultado": "<div class='modal modal-content'></div>"
+  },
+  {
+    "classe": "modal-header",
+    "descricao": "Cabeçalho do modal",
+    "exemplo": "<div class='modal modal-content modal-header'></div>",
+    "resultado": "<div class='modal modal-content modal-header'></div>"
+  },
+  {
+    "classe": "navbar",
+    "descricao": "Barra de navegação",
+    "exemplo": "<nav class='navbar'></nav>",
+    "resultado": "<nav class='navbar'></nav>"
+  },
+  {
+    "classe": "navbar-brand",
+    "descricao": "Marca da barra de navegação",
+    "exemplo": "<nav class='navbar'><a class='navbar-brand'>Marca</a></nav>",
+    "resultado": "<nav class='navbar'><a class='navbar-brand'>Marca</a></nav>"
+  },
+  {
+    "classe": "navbar-nav",
+    "descricao": "Links da barra de navegação",
+    "exemplo": "<nav class='navbar'><ul class='navbar-nav'></ul></nav>",
+    "resultado": "<nav class='navbar'><ul class='navbar-nav'></ul></nav>"
+  },
+  {
+    "classe": "dropdown",
+    "descricao": "Menu suspenso",
+    "exemplo": "<div class='dropdown'></div>",
+    "resultado": "<div class='dropdown'></div>"
+  },
+  {
+    "classe": "dropdown-menu",
+    "descricao": "Menu de opções",
+    "exemplo": "<div class='dropdown'><div class='dropdown-menu'></div></div>",
+    "resultado": "<div class='dropdown'><div class='dropdown-menu'></div></div>"
+  },
+  {
+    "classe": "dropdown-item",
+    "descricao": "Item do menu suspenso",
+    "exemplo": "<div class='dropdown'><div class='dropdown-menu'><a class='dropdown-item'>Opção</a></div></div>",
+    "resultado": "<div class='dropdown'><div class='dropdown-menu'><a class='dropdown-item'>Opção</a></div></div>"
+  },
+  {
+    "classe": "form-group",
+    "descricao": "Grupo de formulário",
+    "exemplo": "<div class='form-group'></div>",
+    "resultado": "<div class='form-group'></div>"
+  },
+  {
+    "classe": "form-control",
+    "descricao": "Controle de formulário",
+    "exemplo": "<div class='form-group'><input class='form-control'></div>",
+    "resultado": "<div class='form-group'><input class='form-control'></div>"
+  },
+  {
+    "classe": "table",
+    "descricao": "Tabela",
+    "exemplo": "<table class='table'></table>",
+    "resultado": "<table class='table'></table>"
+  },
+  {
+    "classe": "table-striped",
+    "descricao": "Tabela com linhas listradas",
+    "exemplo": "<table class='table table-striped'></table>",
+    "resultado": "<table class='table table-striped'></table>"
+  },
+  {
+    "classe": "table-hover",
+    "descricao": "Tabela com efeito de hover",
+    "exemplo": "<table class='table table-hover'></table>",
+    "resultado": "<table class='table table-hover'></table>"
+  },
+  {
+    "classe": "badge",
+    "descricao": "Badge",
+    "exemplo": "<span class='badge'>Badge</span>",
+    "resultado": "<span class='badge'>Badge</span>"
+  },
+  {
+    "classe": "badge-primary",
+    "descricao": "Badge primário",
+    "exemplo": "<span class='badge badge-primary'>Badge</span>",
+    "resultado": "<span class='badge badge-primary'>Badge</span>"
+  },
+{
+    "classe": "badge-secondary",
+    "descricao": "Badge secundário",
+    "exemplo": "<span class='badge badge-secondary'>Badge</span>",
+    "resultado": "<span class='badge badge-secondary'>Badge</span>"
+  },
+  {
+    "classe": "breadcrumb",
+    "descricao": "Navegação breadcrumb",
+    "exemplo": "<nav class='breadcrumb'></nav>",
+    "resultado": "<nav class='breadcrumb'></nav>"
+  },
+  {
+    "classe": "breadcrumb-item",
+    "descricao": "Item da navegação breadcrumb",
+    "exemplo": "<nav class='breadcrumb'><a class='breadcrumb-item'>Item</a></nav>",
+    "resultado": "<nav class='breadcrumb'><a class='breadcrumb-item'>Item</a></nav>"
+  },
+  {
+    "classe": "pagination",
+    "descricao": "Paginação",
+    "exemplo": "<nav class='pagination'></nav>",
+    "resultado": "<nav class='pagination'></nav>"
+  },
+  {
+    "classe": "page-item",
+    "descricao": "Item da páginação",
+    "exemplo": "<nav class='pagination'><a class='page-item'>1</a></nav>",
+    "resultado": "<nav class='pagination'><a class='page-item'>1</a></nav>"
+  },
+  {
+    "classe": "page-link",
+    "descricao": "Link da páginação",
+    "exemplo": "<nav class='pagination'><a class='page-link'>1</a></nav>",
+    "resultado": "<nav class='pagination'><a class='page-link'>1</a></nav>"
+  },
+  {
+    "classe": "jumbotron",
+    "descricao": "Jumbotron",
+    "exemplo": "<div class='jumbotron'></div>",
+    "resultado": "<div class='jumbotron'></div>"
+  },
+  {
+    "classe": "list-group",
+    "descricao": "Lista de grupo",
+    "exemplo": "<ul class='list-group'></ul>",
+    "resultado": "<ul class='list-group'></ul>"
+  },
+  {
+    "classe": "list-group-item",
+    "descricao": "Item da lista de grupo",
+    "exemplo": "<ul class='list-group'><li class='list-group-item'>Item</li></ul>",
+    "resultado": "<ul class='list-group'><li class='list-group-item'>Item</li></ul>"
+  },
+  {
+    "classe": "media",
+    "descricao": "Objeto de mídia",
+    "exemplo": "<div class='media'></div>",
+    "resultado": "<div class='media'></div>"
+  },
+  {
+    "classe": "media-body",
+    "descricao": "Corpo do objeto de mídia",
+    "exemplo": "<div class='media'><div class='media-body'></div></div>",
+    "resultado": "<div class='media'><div class='media-body'></div></div>"
+  },
+  {
+    "classe": "progress-bar",
+    "descricao": "Barra de progresso",
+    "exemplo": "<div class='progress-bar'></div>",
+    "resultado": "<div class='progress-bar'></div>"
+  },
+  {
+    "classe": "tooltip",
+    "descricao": "Tooltip",
+    "exemplo": "<div class='tooltip'></div>",
+    "resultado": "<div class='tooltip'></div>"
+  },
+  {
+    "classe": "popover",
+    "descricao": "Popover",
+    "exemplo": "<div class='popover'></div>",
+    "resultado": "<div class='popover'></div>"
+  },
+  {
+    "classe": "carousel",
+    "descricao": "Carrossel",
+    "exemplo": "<div class='carousel'></div>",
+    "resultado": "<div class='carousel'></div>"
+  },
+  {
+    "classe": "carousel-item",
+    "descricao": "Item do carrossel",
+    "exemplo": "<div class='carousel'><div class='carousel-item'></div></div>",
+    "resultado": "<div class='carousel'><div class='carousel-item'></div></div>"
+  },
+  {
+    "classe": "collapse",
+    "descricao": "Colapsar",
+    "exemplo": "<div class='collapse'></div>",
+    "resultado": "<div class='collapse'></div>"
+  },
+  {
+    "classe": "spinner-border",
+    "descricao": "Spinner de borda",
+    "exemplo": "<div class='spinner-border'></div>",
+    "resultado": "<div class='spinner-border'></div>"
+  },
+  {
+    "classe": "toast",
+    "descricao": "Toast",
+    "exemplo": "<div class='toast'></div>",
+    "resultado": "<div class='toast'></div>"
+  },
+  {
+    "classe": "toast-header",
+    "descricao": "Cabeçalho do toast",
+    "exemplo": "<div class='toast'><div class='toast-header'></div></div>",
+    "resultado": "<div class='toast'><div class='toast-header'></div></div>"
+  },
+  {
+    "classe": "toast-body",
+    "descricao": "Corpo do toast",
+    "exemplo": "<div class='toast'><div class='toast-body'></div></div>",
+    "resultado": "<div class='toast'><div class='toast-body'></div></div>"
+  },
+  {
+    "classe": "badge-pill",
+    "descricao": "Badge em formato de pílula",
+    "exemplo": "<span class='badge badge-pill'>Badge</span>",
+    "resultado": "<span class='badge badge-pill'>Badge</span>"
+  },
+  {
+    "classe": "text-muted",
+    "descricao": "Texto desativado",
+    "exemplo": "<p class='text-muted'>Texto</p>",
+    "resultado": "<p class='text-muted'>Texto</p>"
+  },
+  {
+    "classe": "text-success",
+    "descricao": "Texto de sucesso",
+    "exemplo": "<p class='text-success'>Texto</p>",
+    "resultado": "<p class='text-success'>Texto</p>"
+  },
+  {
+    "classe": "text-danger",
+    "descricao": "Texto de erro",
+    "exemplo": "<p class='text-danger'>Texto</p>",
+    "resultado": "<p class='text-danger'>Texto</p>"
+  },
+  {
+    "classe": "text-warning",
+    "descricao": "Texto de aviso",
+    "exemplo": "<p class='text-warning'>Texto</p>",
+    "resultado": "<p class='text-warning'>Texto</p>"
+  },
+  {
+    "classe": "text-info",
+    "descricao": "Texto informativo",
+    "exemplo": "<p class='text-info'>Texto</p>",
+    "resultado": "<p class='text-info'>Texto</p>"
+  },
+  {
+    "classe": "text-light",
+    "descricao": "Texto claro",
+    "exemplo": "<p class='text-light'>Texto</p>",
+    "resultado": "<p class='text-light'>Texto</p>"
+  },
+  {
+    "classe": "bg-primary",
+    "descricao": "Fundo primário",
+    "exemplo": "<div class='bg-primary'></div>",
+    "resultado": "<div class='bg-primary'></div>"
+  },
+  {
+    "classe": "bg-secondary",
+    "descricao": "Fundo secundário",
+    "exemplo": "<div class='bg-secondary'></div>",
+    "resultado": "<div class='bg-secondary'></div>"
+  },
+  {
+    "classe": "bg-success",
+    "descricao": "Fundo de sucesso",
+    "exemplo": "<div class='bg-success'></div>",
+    "resultado": "<div class='bg-success'></div>"
+  },
+  {
+    "classe": "bg-danger",
+    "descricao": "Fundo de erro",
+    "exemplo": "<div class='bg-danger'></div>",
+    "resultado": "<div class='bg-danger'></div>"
+  },
+  {
+    "classe": "bg-warning",
+    "descricao": "Fundo de aviso",
+    "exemplo": "<div class='bg-warning'></div>",
+    "resultado": "<div class='bg-warning'></div>"
+  },
+{
+    "classe": "bg-info",
+    "descricao": "Fundo informativo",
+    "exemplo": "<div class='bg-info'></div>",
+    "resultado": "<div class='bg-info'></div>"
+  },
+  {
+    "classe": "bg-light",
+    "descricao": "Fundo claro",
+    "exemplo": "<div class='bg-light'></div>",
+    "resultado": "<div class='bg-light'></div>"
+  },
+  {
+    "classe": "bg-dark",
+    "descricao": "Fundo escuro",
+    "exemplo": "<div class='bg-dark'></div>",
+    "resultado": "<div class='bg-dark'></div>"
+  },
+  {
+    "classe": "border",
+    "descricao": "Borda",
+    "exemplo": "<div class='border'></div>",
+    "resultado": "<div class='border'></div>"
+  },
+  {
+    "classe": "border-primary",
+    "descricao": "Borda primária",
+    "exemplo": "<div class='border border-primary'></div>",
+    "resultado": "<div class='border border-primary'></div>"
+  },
+  {
+    "classe": "border-secondary",
+    "descricao": "Borda secundária",
+    "exemplo": "<div class='border border-secondary'></div>",
+    "resultado": "<div class='border border-secondary'></div>"
+  },
+  {
+    "classe": "border-success",
+    "descricao": "Borda de sucesso",
+    "exemplo": "<div class='border border-success'></div>",
+    "resultado": "<div class='border border-success'></div>"
+  },
+  {
+    "classe": "border-danger",
+    "descricao": "Borda de erro",
+    "exemplo": "<div class='border border-danger'></div>",
+    "resultado": "<div class='border border-danger'></div>"
+  },
+  {
+    "classe": "border-warning",
+    "descricao": "Borda de aviso",
+    "exemplo": "<div class='border border-warning'></div>",
+    "resultado": "<div class='border border-warning'></div>"
+  },
+  {
+    "classe": "border-info",
+    "descricao": "Borda informativa",
+    "exemplo": "<div class='border border-info'></div>",
+    "resultado": "<div class='border border-info'></div>"
+  },
+  {
+    "classe": "border-light",
+    "descricao": "Borda clara",
+    "exemplo": "<div class='border border-light'></div>",
+    "resultado": "<div class='border border-light'></div>"
+  },
+  {
+    "classe": "border-dark",
+    "descricao": "Borda escura",
+    "exemplo": "<div class='border border-dark'></div>",
+    "resultado": "<div class='border border-dark'></div>"
+  },
+  {
+    "classe": "rounded",
+    "descricao": "Cantos arredondados",
+    "exemplo": "<div class='rounded'></div>",
+    "resultado": "<div class='rounded'></div>"
+  },
+  {
+    "classe": "rounded-top",
+    "descricao": "Cantos superiores arredondados",
+    "exemplo": "<div class='rounded-top'></div>",
+    "resultado": "<div class='rounded-top'></div>"
+  },
+  {
+    "classe": "rounded-right",
+    "descricao": "Cantos direitos arredondados",
+    "exemplo": "<div class='rounded-right'></div>",
+    "resultado": "<div class='rounded-right'></div>"
+  },
+  {
+    "classe": "rounded-bottom",
+    "descricao": "Cantos inferiores arredondados",
+    "exemplo": "<div class='rounded-bottom'></div>",
+    "resultado": "<div class='rounded-bottom'></div>"
+  },
+  {
+    "classe": "rounded-left",
+    "descricao": "Cantos esquerdos arredondados",
+    "exemplo": "<div class='rounded-left'></div>",
+    "resultado": "<div class='rounded-left'></div>"
+  },
+  {
+    "classe": "clearfix",
+    "descricao": "Limpar flutuação",
+    "exemplo": "<div class='clearfix'></div>",
+    "resultado": "<div class='clearfix'></div>"
+  },
+  {
+    "classe": "float-left",
+    "descricao": "Flutuar à esquerda",
+    "exemplo": "<div class='float-left'></div>",
+    "resultado": "<div class='float-left'></div>"
+  },
+  {
+    "classe": "float-right",
+    "descricao": "Flutuar à direita",
+    "exemplo": "<div class='float-right'></div>",
+    "resultado": "<div class='float-right'></div>"
+  },
+  {
+    "classe": "position-relative",
+    "descricao": "Posição relativa",
+    "exemplo": "<div class='position-relative'></div>",
+    "resultado": "<div class='position-relative'></div>"
+  },
+  {
+    "classe": "position-absolute",
+    "descricao": "Posição absoluta",
+    "exemplo": "<div class='position-absolute'></div>",
+    "resultado": "<div class='position-absolute'></div>"
+  },
+  {
+    "classe": "position-fixed",
+    "descricao": "Posição fixa",
+    "exemplo": "<div class='position-fixed'></div>",
+    "resultado": "<div class='position-fixed'></div>"
+  },
+  {
+    "classe": "position-sticky",
+    "descricao": "Posição fixa ao rolar",
+    "exemplo": "<div class='position-sticky'></div>",
+    "resultado": "<div class='position-sticky'></div>"
+  },
+  {
+    "classe": "d-flex",
+    "descricao": "Display flexível",
+    "exemplo": "<div class='d-flex'></div>",
+    "resultado": "<div class='d-flex'></div>"
+  },
+  {
+    "classe": "d-inline-flex",
+    "descricao": "Display flexível em linha",
+    "exemplo": "<div class='d-inline-flex'></div>",
+    "resultado": "<div class='d-inline-flex'></div>"
+  },
+  {
+    "classe": "d-grid",
+    "descricao": "Display em grade",
+    "exemplo": "<div class='d-grid'></div>",
+    "resultado": "<div class='d-grid'></div>"
+  },
+  {
+    "classe": "d-inline-grid",
+    "descricao": "Display em grade em linha",
+    "exemplo": "<div class='d-inline-grid'></div>",
+    "resultado": "<div class='d-inline-grid'></div>"
+  },
+  {
+    "classe": "d-block",
+    "descricao": "Display em bloco",
+    "exemplo": "<div class='d-block'></div>",
+    "resultado": "<div class='d-block'></div>"
+  },
+  {
+    "classe": "d-inline",
+    "descricao": "Display em linha",
+    "exemplo": "<div class='d-inline'></div>",
+    "resultado": "<div class='d-inline'></div>"
+  },
+  {
+    "classe": "d-none",
+    "descricao": "Display nenhum",
+    "exemplo": "<div class='d-none'></div>",
+    "resultado": "<div class='d-none'></div>"
+  },
+  {
+    "classe": "shadow",
+    "descricao": "Sombra",
+    "exemplo": "<div class='shadow'></div>",
+    "resultado": "<div class='shadow'></div>"
+  },
+  {
+    "classe": "shadow-sm",
+    "descricao": "Sombra pequena",
+    "exemplo": "<div class='shadow-sm'></div>",
+    "resultado": "<div class='shadow-sm'></div>"
+  },
+  {
+    "classe": "shadow-lg",
+    "descricao": "Sombra grande",
+    "exemplo": "<div class='shadow-lg'></div>",
+    "resultado": "<div class='shadow-lg'></div>"
+  },
+  {
+    "classe": "opacity-0",
+    "descricao": "Opacidade 0",
+    "exemplo": "<div class='opacity-0'></div>",
+    "resultado": "<div class='opacity-0'></div>"
+  },
+  {
+    "classe": "opacity-25",
+    "descricao": "Opacidade 25%",
+    "exemplo": "<div class='opacity-25'></div>",
+    "resultado": "<div class='opacity-25'></div>"
+  },
+  {
+    "classe": "opacity-50",
+    "descricao": "Opacidade 50%",
+    "exemplo": "<div class='opacity-50'></div>",
+    "resultado": "<div class='opacity-50'></div>"
+  },
+  {
+    "classe": "opacity-75",
+    "descricao": "Opacidade 75%",
+    "exemplo": "<div class='opacity-75'></div>",
+    "resultado": "<div class='opacity-75'></div>"
+  },
+  {
+    "classe": "opacity-100",
+    "descricao": "Opacidade 100%",
+    "exemplo": "<div class='opacity-100'></div>",
+    "resultado": "<div class='opacity-100'></div>"
+  },
+  {
+    "classe": "overflow-auto",
+    "descricao": "Overflow automático",
+    "exemplo": "<div class='overflow-auto'></div>",
+    "resultado": "<div class='overflow-auto'></div>"
+  },
+  {
+    "classe": "overflow-hidden",
+    "descricao": "Overflow escondido",
+    "exemplo": "<div class='overflow-hidden'></div>",
+    "resultado": "<div class='overflow-hidden'></div>"
+  },
+  {
+    "classe": "overflow-visible",
+    "descricao": "Overflow visível",
+    "exemplo": "<div class='overflow-visible'></div>",
+    "resultado": "<div class='overflow-visible'></div>"
+  },
+  {
+    "classe": "overflow-scroll",
+    "descricao": "Overflow com barra de rolagem",
+    "exemplo": "<div class='overflow-scroll'></div>",
+    "resultado": "<div class='overflow-scroll'></div>"
+  },
+  {
+    "classe": "position-static",
+    "descricao": "Posição estática",
+    "exemplo": "<div class='position-static'></div>",
+    "resultado": "<div class='position-static'></div>"
+  },
+  {
+    "classe": "fixed-top",
+    "descricao": "Fixo no topo",
+    "exemplo": "<div class='fixed-top'></div>",
+    "resultado": "<div class='fixed-top'></div>"
+  },
+  {
+    "classe": "fixed-bottom",
+    "descricao": "Fixo na parte inferior",
+    "exemplo": "<div class='fixed-bottom'></div>",
+    "resultado": "<div class='fixed-bottom'></div>"
+  },
+  {
+    "classe": "sticky-top",
+    "descricao": "Gruda no topo",
+    "exemplo": "<div class='sticky-top'></div>",
+    "resultado": "<div class='sticky-top'></div>"
+  },
+  {
+    "classe": "stretched-link",
+    "descricao": "Link esticado",
+    "exemplo": "<a href='#' class='stretched-link'>Link</a>",
+    "resultado": "<a href='#' class='stretched-link'>Link</a>"
+  },
+  {
+    "classe": "visually-hidden",
+    "descricao": "Visivelmente escondido",
+    "exemplo": "<div class='visually-hidden'></div>",
+    "resultado": "<div class='visually-hidden'></div>"
+  },
+  {
+    "classe": "invisible",
+    "descricao": "Invisível",
+    "exemplo": "<div class='invisible'></div>",
+    "resultado": "<div class='invisible'></div>"
+  }
+]

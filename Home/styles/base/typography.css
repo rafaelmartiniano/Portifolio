@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #4a2c2a; /* Marrom escuro */
+    --secondary-color: #2e2e2e;
+    --highlight-color: #e52e71;
+    --background-color: #ffffff; /* Fundo padrão claro */
+    --text-color: #333333;       /* Texto padrão claro */
+    --font-family: 'Poppins', sans-serif;
+    --project-color: #29abe2;
+    --dark-text: #333;
+    --link-color: #007bff;
+    --button-hover-color: #ff6f61;
+    --button-active-color: #ff3b3b;
+}
+
+/* Importando as fontes */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap');
+
+/* Variáveis para o tema escuro */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #ffffff;
+}
+
+/* Estilos globais utilizando as variáveis definidas */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+}
+
+/* Tipografia global */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+/* Estilizando os títulos com a fonte importada Playfair Display */
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--text-color);
+    text-align: center;
+}

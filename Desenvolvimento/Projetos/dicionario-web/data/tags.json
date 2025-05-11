@@ -1,0 +1,422 @@
+[
+  {
+    "tag": "h1",
+    "descricao": "Título de nível 1",
+    "exemplo": "<h1>Título</h1>",
+    "resultado": "<h1>Título</h1>"
+  },
+  {
+    "tag": "h2",
+    "descricao": "Título de nível 2",
+    "exemplo": "<h2>Título</h2>",
+    "resultado": "<h2>Título</h2>"
+  },
+  {
+    "tag": "h3",
+    "descricao": "Título de nível 3",
+    "exemplo": "<h3>Título</h3>",
+    "resultado": "<h3>Título</h3>"
+  },
+  {
+    "tag": "h4",
+    "descricao": "Título de nível 4",
+    "exemplo": "<h4>Título</h4>",
+    "resultado": "<h4>Título</h4>"
+  },
+  {
+    "tag": "h5",
+    "descricao": "Título de nível 5",
+    "exemplo": "<h5>Título</h5>",
+    "resultado": "<h5>Título</h5>"
+  },
+  {
+    "tag": "h6",
+    "descricao": "Título de nível 6",
+    "exemplo": "<h6>Título</h6>",
+    "resultado": "<h6>Título</h6>"
+  },
+  {
+    "tag": "a",
+    "descricao": "Link",
+    "exemplo": "<a href='#'>Link</a>",
+    "resultado": "<a href='#'>Link</a>"
+  },
+  {
+    "tag": "img",
+    "descricao": "Imagem",
+    "exemplo": "<img src='imagem.jpg' alt='Descrição da imagem'>",
+    "resultado": "<img src='imagem.jpg' alt='Descrição da imagem'>"
+  },
+  {
+    "tag": "ul",
+    "descricao": "Lista não ordenada",
+    "exemplo": "<ul><li>Item 1</li><li>Item 2</li></ul>",
+    "resultado": "<ul><li>Item 1</li><li>Item 2</li></ul>"
+  },
+  {
+    "tag": "ol",
+    "descricao": "Lista ordenada",
+    "exemplo": "<ol><li>Item 1</li><li>Item 2</li></ol>",
+    "resultado": "<ol><li>Item 1</li><li>Item 2</li></ol>"
+  },
+  {
+    "tag": "li",
+    "descricao": "Item de lista",
+    "exemplo": "<li>Item</li>",
+    "resultado": "<li>Item</li>"
+  },
+  {
+    "tag": "table",
+    "descricao": "Tabela",
+    "exemplo": "<table><tr><td>Dado 1</td><td>Dado 2</td></tr></table>",
+    "resultado": "<table><tr><td>Dado 1</td><td>Dado 2</td></tr></table>"
+  },
+  {
+    "tag": "tr",
+    "descricao": "Linha de tabela",
+    "exemplo": "<tr><td>Dado</td></tr>",
+    "resultado": "<tr><td>Dado</td></tr>"
+  },
+  {
+    "tag": "td",
+    "descricao": "Célula de tabela",
+    "exemplo": "<td>Dado</td>",
+    "resultado": "<td>Dado</td>"
+  },
+  {
+    "tag": "form",
+    "descricao": "Formulário",
+    "exemplo": "<form></form>",
+    "resultado": "<form></form>"
+  },
+  {
+    "tag": "input",
+    "descricao": "Elemento de entrada",
+    "exemplo": "<input type='text'>",
+    "resultado": "<input type='text'>"
+  },
+  {
+    "tag": "button",
+    "descricao": "Botão",
+    "exemplo": "<button>Botão</button>",
+    "resultado": "<button>Botão</button>"
+  },
+  {
+    "tag": "span",
+    "descricao": "Container em linha",
+    "exemplo": "<span>Texto</span>",
+    "resultado": "<span>Texto</span>"
+  },
+  {
+    "tag": "header",
+    "descricao": "Cabeçalho",
+    "exemplo": "<header></header>",
+    "resultado": "<header></header>"
+  },
+  {
+    "tag": "footer",
+    "descricao": "Rodapé",
+    "exemplo": "<footer></footer>",
+    "resultado": "<footer></footer>"
+  },
+  {
+    "tag": "nav",
+    "descricao": "Navegação",
+    "exemplo": "<nav></nav>",
+    "resultado": "<nav></nav>"
+  },
+  {
+    "tag": "section",
+    "descricao": "Seção",
+    "exemplo": "<section></section>",
+    "resultado": "<section></section>"
+  },
+  {
+    "tag": "article",
+    "descricao": "Artigo",
+    "exemplo": "<article></article>",
+    "resultado": "<article></article>"
+  },
+  {
+    "tag": "div",
+    "descricao": "Container de bloco",
+    "exemplo": "<div></div>",
+    "resultado": "<div></div>"
+  },
+  {
+    "tag": "p",
+    "descricao": "Parágrafo",
+    "exemplo": "<p></p>",
+    "resultado": "<p></p>"
+  },
+  {
+    "tag": "br",
+    "descricao": "Quebra de linha",
+    "exemplo": "<br>",
+    "resultado": "<br>"
+  },
+  {
+    "tag": "hr",
+    "descricao": "Linha horizontal",
+    "exemplo": "<hr>",
+    "resultado": "<hr>"
+  },
+  {
+    "tag": "strong",
+    "descricao": "Texto em negrito",
+    "exemplo": "<strong>Texto</strong>",
+    "resultado": "<strong>Texto</strong>"
+  },
+  {
+    "tag": "em",
+    "descricao": "Texto em itálico",
+    "exemplo": "<em>Texto</em>",
+    "resultado": "<em>Texto</em>"
+  },
+  {
+    "tag": "blockquote",
+    "descricao": "Citação em bloco",
+    "exemplo": "<blockquote>Citação</blockquote>",
+    "resultado": "<blockquote>Citação</blockquote>"
+  },
+  {
+    "tag": "code",
+    "descricao": "Código",
+    "exemplo": "<code>Código</code>",
+    "resultado": "<code>Código</code>"
+  },
+  {
+    "tag": "pre",
+    "descricao": "Pré-formatado",
+    "exemplo": "<pre>Texto pré-formatado</pre>",
+    "resultado": "<pre>Texto pré-formatado</pre>"
+  },
+  {
+    "tag": "label",
+    "descricao": "Rótulo para elementos de formulário",
+    "exemplo": "<label>Rótulo</label>",
+    "resultado": "<label>Rótulo</label>"
+  },
+  {
+    "tag": "select",
+    "descricao": "Menu suspenso",
+    "exemplo": "<select><option>Opção 1</option></select>",
+    "resultado": "<select><option>Opção 1</option></select>"
+  },
+  {
+    "tag": "option",
+    "descricao": "Opção de menu suspenso",
+    "exemplo": "<option>Opção</option>",
+    "resultado": "<option>Opção</option>"
+  },
+  {
+    "tag": "textarea",
+    "descricao": "Área de texto",
+    "exemplo": "<textarea></textarea>",
+    "resultado": "<textarea></textarea>"
+  },
+  {
+    "tag": "iframe",
+    "descricao": "Frame embutido",
+    "exemplo": "<iframe src='url'></iframe>",
+    "resultado": "<iframe src='url'></iframe>"
+  },
+  {
+    "tag": "audio",
+    "descricao": "Elemento de áudio",
+    "exemplo": "<audio src='audio.mp3'></audio>",
+    "resultado": "<audio src='audio.mp3'></audio>"
+  },
+  {
+    "tag": "video",
+    "descricao": "Elemento de vídeo",
+    "exemplo": "<video src='video.mp4'></video>",
+    "resultado": "<video src='video.mp4'></video>"
+  },
+{
+    "tag": "canvas",
+    "descricao": "Área de desenho",
+    "exemplo": "<canvas></canvas>",
+    "resultado": "<canvas></canvas>"
+  },
+  {
+    "tag": "svg",
+    "descricao": "Gráficos vetoriais",
+    "exemplo": "<svg></svg>",
+    "resultado": "<svg></svg>"
+  },
+  {
+    "tag": "link",
+    "descricao": "Link para recursos externos",
+    "exemplo": "<link rel='stylesheet' href='style.css'>",
+    "resultado": "<link rel='stylesheet' href='style.css'>"
+  },
+  {
+    "tag": "meta",
+    "descricao": "Metadados",
+    "exemplo": "<meta charset='UTF-8'>",
+    "resultado": "<meta charset='UTF-8'>"
+  },
+  {
+    "tag": "title",
+    "descricao": "Título da página",
+    "exemplo": "<title>Título da página</title>",
+    "resultado": "<title>Título da página</title>"
+  },
+  {
+    "tag": "style",
+    "descricao": "Estilos embutidos",
+    "exemplo": "<style></style>",
+    "resultado": "<style></style>"
+  },
+  {
+    "tag": "script",
+    "descricao": "Scripts embutidos",
+    "exemplo": "<script></script>",
+    "resultado": "<script></script>"
+  },
+  {
+    "tag": "noscript",
+    "descricao": "Conteúdo alternativo para navegadores sem suporte a scripts",
+    "exemplo": "<noscript></noscript>",
+    "resultado": "<noscript></noscript>"
+  },
+  {
+    "tag": "figure",
+    "descricao": "Imagem com legenda",
+    "exemplo": "<figure><figcaption>Legenda</figcaption></figure>",
+    "resultado": "<figure><figcaption>Legenda</figcaption></figure>"
+  },
+  {
+    "tag": "details",
+    "descricao": "Detalhes e resumo",
+    "exemplo": "<details><summary>Resumo</summary></details>",
+    "resultado": "<details><summary>Resumo</summary></details>"
+  },
+  {
+    "tag": "progress",
+    "descricao": "Barra de progresso",
+    "exemplo": "<progress></progress>",
+    "resultado": "<progress></progress>"
+  },
+  {
+    "tag": "meter",
+    "descricao": "Medidor",
+    "exemplo": "<meter></meter>",
+    "resultado": "<meter></meter>"
+  },
+  {
+    "tag": "template",
+    "descricao": "Template reutilizável",
+    "exemplo": "<template></template>",
+    "resultado": "<template></template>"
+  },
+  {
+    "tag": "main",
+    "descricao": "Conteúdo principal",
+    "exemplo": "<main></main>",
+    "resultado": "<main></main>"
+  },
+  {
+    "tag": "aside",
+    "descricao": "Conteúdo lateral",
+    "exemplo": "<aside></aside>",
+    "resultado": "<aside></aside>"
+  },
+  {
+    "tag": "mark",
+    "descricao": "Texto marcado",
+    "exemplo": "<mark>Texto</mark>",
+    "resultado": "<mark>Texto</mark>"
+  },
+  {
+    "tag": "abbr",
+    "descricao": "Abreviação",
+    "exemplo": "<abbr title='Abreviação'>Abrv.</abbr>",
+    "resultado": "<abbr title='Abreviação'>Abrv.</abbr>"
+  },
+  {
+    "tag": "cite",
+    "descricao": "Citação",
+    "exemplo": "<cite>Citação</cite>",
+    "resultado": "<cite>Citação</cite>"
+  },
+  {
+    "tag": "dfn",
+    "descricao": "Definição",
+    "exemplo": "<dfn>Definição</dfn>",
+    "resultado": "<dfn>Definição</dfn>"
+  },
+  {
+    "tag": "kbd",
+    "descricao": "Entrada de teclado",
+    "exemplo": "<kbd>Teclado</kbd>",
+    "resultado": "<kbd>Teclado</kbd>"
+  },
+  {
+    "tag": "samp",
+    "descricao": "Saída de código",
+    "exemplo": "<code>Saída</code>",
+    "resultado": "<code>Saída</code>"
+  },
+  {
+    "tag": "var",
+    "descricao": "Variável",
+    "exemplo": "<var>Variável</var>",
+    "resultado": "<var>Variável</var>"
+  },
+  {
+    "tag": "time",
+    "descricao": "Data/hora",
+    "exemplo": "<time>Data/hora</time>",
+    "resultado": "<time>Data/hora</time>"
+  },
+  {
+    "tag": "bdi",
+    "descricao": "Isolamento de texto bidirecional",
+    "exemplo": "<bdi></bdi>",
+    "resultado": "<bdi></bdi>"
+  },
+  {
+    "tag": "bdo",
+    "descricao": "Substituição de direção de texto",
+    "exemplo": "<bdo></bdo>",
+    "resultado": "<bdo></bdo>"
+  },
+  {
+    "tag": "wbr",
+    "descricao": "Ponto de quebra de linha",
+    "exemplo": "<wbr>",
+    "resultado": "<wbr>"
+  },
+  {
+    "tag": "data",
+    "descricao": "Dados vinculados",
+    "exemplo": "<data></data>",
+    "resultado": "<data></data>"
+  },
+  {
+    "tag": "output",
+    "descricao": "Resultado de um cálculo",
+    "exemplo": "<output></output>",
+    "resultado": "<output></output>"
+  },
+  {
+    "tag": "map",
+    "descricao": "Mapa de imagem",
+    "exemplo": "<map></map>",
+    "resultado": "<map></map>"
+  },
+  {
+    "tag": "area",
+    "descricao": "Área de mapa de imagem",
+    "exemplo": "<area>",
+    "resultado": "<area>"
+  },
+  {
+    "tag": "object",
+    "descricao": "Conteúdo embutido",
+    "exemplo": "<object></object>",
+    "resultado": "<object></object>"
+  }
+]

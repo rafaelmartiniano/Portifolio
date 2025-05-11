@@ -1,0 +1,27 @@
+/* Estilização do footer (rodapé) */
+.footer {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer__social-link {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.footer__text {
+  margin: 0.5rem 0;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}

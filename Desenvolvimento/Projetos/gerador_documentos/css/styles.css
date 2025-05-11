@@ -1,0 +1,192 @@
+/* =============================
+   ESTILOS GLOBAIS E LAYOUT
+   ============================= */
+
+/* Estilização do body com fundo gradiente */
+body {
+    margin: 0;                         /* Remove margens padrão */
+    padding: 0;                        /* Remove padding padrão */
+    font-family: Arial, sans-serif;    /* Fonte padrão (fallback) */
+    /* Fundo gradiente da esquerda para a direita */
+    background: linear-gradient(to right, #4facfe, #00f2fe); /* Fundo gradiente azul */
+    color: #333;                       /* Cor da fonte ajustada para melhor legibilidade */
+}
+
+/* Container principal que centraliza o conteúdo */
+.container {
+    max-width: 800px;                  /* Largura máxima */
+    margin: 20px auto;                 /* Centralizado com margens verticais */
+    padding: 20px;                     /* Espaçamento interno */
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    color: #333;                       /* Cor da fonte ajustada para melhor legibilidade */
+    border-radius: 10px;               /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* Estilização do título principal */
+h1 {
+    text-align: center;                /* Centraliza o texto */
+    margin-bottom: 20px;               /* Espaçamento inferior */
+}
+
+/* Estilização dos rótulos dos campos do formulário */
+label {
+    display: block;                    /* Exibe em bloco */
+    margin-top: 10px;                  /* Espaçamento superior */
+    font-weight: bold;                 /* Negrito */
+}
+
+/* Estilização dos inputs, textarea e select */
+input, textarea, select {
+    width: 100%;                       /* Ocupam 100% da largura */
+    padding: 10px;                     /* Espaçamento interno */
+    margin-top: 5px;                   /* Espaçamento superior */
+    border: 1px solid #ccc;            /* Borda cinza clara */
+    border-radius: 5px;                /* Bordas arredondadas */
+    font-size: 16px;                   /* Tamanho da fonte */
+    background-color: #fff;            /* Fundo branco */
+    color: #333;                       /* Cor da fonte ajustada para melhor legibilidade */
+}
+
+/* =============================
+   ESTILOS DOS BOTÕES
+   ============================= */
+
+/* Estilização geral dos botões */
+button {
+    width: 100%;                       /* Ocupa toda a largura */
+    padding: 10px;                     /* Espaçamento interno */
+    margin-top: 10px;                  /* Espaçamento superior */
+    /* Fundo gradiente para os botões */
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Fundo gradiente para os botões */
+    color: #fff;                       /* Texto branco */
+    border: none;                      /* Sem borda */
+    border-radius: 5px;                /* Bordas arredondadas */
+    cursor: pointer;                   /* Cursor pointer */
+    font-size: 16px;                   /* Tamanho da fonte */
+    transition: background 0.3s ease;  /* Transição suave */
+}
+
+/* Efeito de hover para os botões */
+button:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* Inverte o gradiente */
+}
+
+/* =============================
+   ÁREA DE DOCUMENTO E MENSAGENS
+   ============================= */
+
+/* Área onde o documento gerado é exibido */
+.document-preview {
+    display: none;                     /* Inicialmente oculta */
+    margin-top: 20px;                  /* Espaçamento superior */
+    padding: 20px;                     /* Espaçamento interno */
+    background-color: #fff;            /* Fundo branco */
+    color: #333;                       /* Cor da fonte ajustada para melhor legibilidade */
+    border: 1px solid #ccc;            /* Borda cinza */
+    border-radius: 5px;                /* Bordas arredondadas */
+}
+
+/* Caixa para exibir mensagens de ação com efeito fade-out */
+.message {
+    margin-top: 10px;                  /* Espaçamento superior */
+    padding: 10px;                     /* Espaçamento interno */
+    background-color: #dff0d8;         /* Fundo verde claro (sucesso) */
+    color: #3c763d;                    /* Texto verde escuro */
+    border: 1px solid #d6e9c6;         /* Borda verde */
+    border-radius: 5px;                /* Bordas arredondadas */
+    opacity: 1;                        /* Opacidade total */
+    transition: opacity 2s ease;       /* Efeito de fade-out em 2 segundos */
+    text-align: center;                /* Texto centralizado */
+    display: none;                     /* Inicialmente oculta */
+}
+
+/* =============================
+   RESPONSIVIDADE
+   ============================= */
+
+/* Ajustes para telas com largura máxima de 600px */
+@media (max-width: 600px) {
+    .container {
+        margin: 10px;                /* Menor margem */
+        padding: 10px;               /* Menor padding */
+    }
+    
+    button {
+        font-size: 14px;             /* Fonte menor para botões */
+    }
+}
+
+/* =============================
+   MODO ESCURO (não padrão)
+   ============================= */
+
+/* Quando a classe 'dark-mode' é adicionada ao body, altera as cores */
+.dark-mode {
+    background: #333;                 /* Fundo escuro */
+    color: #ddd;                     /* Texto claro */
+}
+
+.dark-mode .container {
+    background-color: #444;          /* Fundo do container em tom escuro */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Sombra mais intensa */
+}
+
+.dark-mode input, 
+.dark-mode textarea, 
+.dark-mode select {
+    background-color: #555;          /* Fundo dos campos em tom escuro */
+    color: #ddd;                     /* Texto claro */
+    border: 1px solid #666;          /* Borda escura */
+}
+
+.dark-mode button {
+    background: linear-gradient(to right, #555, #777); /* Gradiente dos botões no modo escuro */
+    color: #fff;                     /* Texto branco */
+}
+
+.dark-mode .document-preview {
+    background-color: #555;          /* Fundo do documento em tom escuro */
+    color: #ddd;                     /* Texto claro */
+    border: 1px solid #666;          /* Borda escura */
+}
+
+.dark-mode .message {
+    background-color: #444;          /* Fundo da mensagem no modo escuro */
+    color: #ccc;                     /* Texto claro */
+    border: 1px solid #555;          /* Borda escura */
+}
+
+/* =============================
+   FONTES ESPECÍFICAS POR FORMULÁRIO
+   ============================= */
+
+/* TCC: utiliza Times New Roman */
+.font-tcc {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Artigo: utiliza Arial */
+.font-artigo {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Relatório: utiliza Calibri */
+.font-relatorio {
+    font-family: 'Calibri', sans-serif;
+}
+
+/* Documento POE: utiliza Georgia */
+.font-poe {
+    font-family: 'Georgia', serif;
+}
+
+/* Documento KB: utiliza Verdana */
+.font-kb {
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Documento RCA: utiliza Courier New */
+.font-rca {
+    font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,1168 @@
+[
+  {
+    "script": "document.querySelector()",
+    "descricao": "Seleciona elementos",
+    "exemplo": "const elemento = document.querySelector('.classe');",
+    "resultado": ""
+  },
+  {
+    "script": "addEventListener()",
+    "descricao": "Adiciona eventos",
+    "exemplo": "elemento.addEventListener('click', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "setTimeout()",
+    "descricao": "Temporizador",
+    "exemplo": "setTimeout(funcao, tempo);",
+    "resultado": ""
+  },
+  {
+    "script": "setInterval()",
+    "descricao": "Intervalo",
+    "exemplo": "setInterval(funcao, tempo);",
+    "resultado": ""
+  },
+  {
+    "script": "fetch()",
+    "descricao": "Requisição HTTP",
+    "exemplo": "fetch('url').then(resposta => resposta.json());",
+    "resultado": ""
+  },
+  {
+    "script": "localStorage.setItem()",
+    "descricao": "Armazenamento local",
+    "exemplo": "localStorage.setItem('chave', 'valor');",
+    "resultado": ""
+  },
+  {
+    "script": "localStorage.getItem()",
+    "descricao": "Recupera valor do armazenamento local",
+    "exemplo": "const valor = localStorage.getItem('chave');",
+    "resultado": ""
+  },
+  {
+    "script": "JSON.parse()",
+    "descricao": "Converte JSON para objeto",
+    "exemplo": "const objeto = JSON.parse(jsonString);",
+    "resultado": ""
+  },
+  {
+    "script": "JSON.stringify()",
+    "descricao": "Converte objeto para JSON",
+    "exemplo": "const jsonString = JSON.stringify(objeto);",
+    "resultado": ""
+  },
+  {
+    "script": "classList.add()",
+    "descricao": "Adiciona classe",
+    "exemplo": "elemento.classList.add('classe');",
+    "resultado": ""
+  },
+  {
+    "script": "classList.remove()",
+    "descricao": "Remove classe",
+    "exemplo": "elemento.classList.remove('classe');",
+    "resultado": ""
+  },
+  {
+    "script": "innerHTML",
+    "descricao": "Manipula conteúdo HTML",
+    "exemplo": "elemento.innerHTML = 'Novo conteúdo';",
+    "resultado": ""
+  },
+  {
+    "script": "textContent",
+    "descricao": "Manipula conteúdo de texto",
+    "exemplo": "elemento.textContent = 'Novo texto';",
+    "resultado": ""
+  },
+  {
+    "script": "createElement()",
+    "descricao": "Cria elemento",
+    "exemplo": "const novoElemento = document.createElement('div');",
+    "resultado": ""
+  },
+  {
+    "script": "appendChild()",
+    "descricao": "Adiciona filho a elemento",
+    "exemplo": "elementoPai.appendChild(novoElemento);",
+    "resultado": ""
+  },
+  {
+    "script": "removeChild()",
+    "descricao": "Remove filho de elemento",
+    "exemplo": "elementoPai.removeChild(elementoFilho);",
+    "resultado": ""
+  },
+  {
+    "script": "getAttribute()",
+    "descricao": "Obtém atributo",
+    "exemplo": "const valor = elemento.getAttribute('atributo');",
+    "resultado": ""
+  },
+  {
+    "script": "setAttribute()",
+    "descricao": "Define atributo",
+    "exemplo": "elemento.setAttribute('atributo', 'valor');",
+    "resultado": ""
+  },
+  {
+    "script": "style.property",
+    "descricao": "Manipula estilos",
+    "exemplo": "elemento.style.backgroundColor = 'red';",
+    "resultado": ""
+  },
+  {
+    "script": "querySelectorAll()",
+    "descricao": "Seleciona múltiplos elementos",
+    "exemplo": "const elementos = document.querySelectorAll('.classe');",
+    "resultado": ""
+  },
+  {
+    "script": "parentNode",
+    "descricao": "Elemento pai",
+    "exemplo": "const pai = elemento.parentNode;",
+    "resultado": ""
+  },
+  {
+    "script": "childNodes",
+    "descricao": "Nós filhos",
+    "exemplo": "const filhos = elemento.childNodes;",
+    "resultado": ""
+  },
+  {
+    "script": "nextSibling",
+    "descricao": "Próximo irmão",
+    "exemplo": "const proximoIrmao = elemento.nextSibling;",
+    "resultado": ""
+  },
+  {
+    "script": "previousSibling",
+    "descricao": "Irmão anterior",
+    "exemplo": "const irmaoAnterior = elemento.previousSibling;",
+    "resultado": ""
+  },
+  {
+    "script": "event.preventDefault()",
+    "descricao": "Previne comportamento padrão",
+    "exemplo": "evento.preventDefault();",
+    "resultado": ""
+  },
+  {
+    "script": "event.stopPropagation()",
+    "descricao": "Previne propagação de eventos",
+    "exemplo": "evento.stopPropagation();",
+    "resultado": ""
+  },
+  {
+    "script": "addEventListener('DOMContentLoaded')",
+    "descricao": "Evento de carregamento do DOM",
+    "exemplo": "document.addEventListener('DOMContentLoaded', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.onload",
+    "descricao": "Evento de carregamento da janela",
+    "exemplo": "window.onload = funcao;",
+    "resultado": ""
+  },
+  {
+    "script": "window.scrollTo()",
+    "descricao": "Rolagem da janela",
+    "exemplo": "window.scrollTo(0, 0);",
+    "resultado": ""
+  },
+  {
+    "script": "window.location",
+    "descricao": "Manipulação de URL",
+    "exemplo": "window.location.href = 'nova-url';",
+    "resultado": ""
+  },
+  {
+    "script": "window.history",
+    "descricao": "Manipulação do histórico",
+    "exemplo": "window.history.back();",
+    "resultado": ""
+  },
+  {
+    "script": "window.localStorage",
+    "descricao": "Armazenamento local",
+    "exemplo": "window.localStorage.setItem('chave', 'valor');",
+    "resultado": ""
+  },
+  {
+    "script": "window.sessionStorage",
+    "descricao": "Armazenamento de sessão",
+    "exemplo": "window.sessionStorage.setItem('chave', 'valor');",
+    "resultado": ""
+  },
+  {
+    "script": "window.alert()",
+    "descricao": "Diálogo de alerta",
+    "exemplo": "window.alert('Mensagem');",
+    "resultado": ""
+  },
+  {
+    "script": "window.confirm()",
+    "descricao": "Diálogo de confirmação",
+    "exemplo": "const resposta = window.confirm('Deseja continuar?');",
+    "resultado": ""
+  },
+  {
+    "script": "window.prompt()",
+    "descricao": "Diálogo de prompt",
+    "exemplo": "const nome = window.prompt('Digite seu nome:');",
+    "resultado": ""
+  },
+  {
+    "script": "window.open()",
+    "descricao": "Abre nova janela",
+    "exemplo": "window.open('url');",
+    "resultado": ""
+  },
+  {
+    "script": "window.close()",
+    "descricao": "Fecha janela atual",
+    "exemplo": "window.close();",
+    "resultado": ""
+  },
+  {
+    "script": "window.setInterval()",
+    "descricao": "Define intervalo",
+    "exemplo": "window.setInterval(funcao, tempo);",
+    "resultado": ""
+  },
+  {
+    "script": "window.clearInterval()",
+    "descricao": "Limpa intervalo",
+    "exemplo": "window.clearInterval(idDoIntervalo);",
+    "resultado": ""
+  },
+  {
+    "script": "window.setTimeout()",
+    "descricao": "Define tempo limite",
+    "exemplo": "window.setTimeout(funcao, tempo);",
+    "resultado": ""
+  },
+  {
+    "script": "window.clearTimeout()",
+    "descricao": "Limpa tempo limite",
+    "exemplo": "window.clearTimeout(idDoTimeout);",
+    "resultado": ""
+  },
+  {
+    "script": "window.requestAnimationFrame()",
+    "descricao": "Animação",
+    "exemplo": "window.requestAnimationFrame(funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.cancelAnimationFrame()",
+    "descricao": "Cancela animação",
+    "exemplo": "window.cancelAnimationFrame(idDaAnimacao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.matchMedia()",
+    "descricao": "Consultas de mídia",
+    "exemplo": "const mediaQuery = window.matchMedia('(max-width: 768px)');",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('resize')",
+    "descricao": "Evento de redimensionamento",
+    "exemplo": "window.addEventListener('resize', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('scroll')",
+    "descricao": "Evento de rolagem",
+    "exemplo": "window.addEventListener('scroll', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('click')",
+    "descricao": "Evento de clique",
+    "exemplo": "window.addEventListener('click', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('dblclick')",
+    "descricao": "Evento de duplo clique",
+    "exemplo": "window.addEventListener('dblclick', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('mouseover')",
+    "descricao": "Evento de mouseover",
+    "exemplo": "window.addEventListener('mouseover', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('mouseout')",
+    "descricao": "Evento de mouseout",
+    "exemplo": "window.addEventListener('mouseout', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('keydown')",
+    "descricao": "Evento de tecla pressionada",
+    "exemplo": "window.addEventListener('keydown', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('keyup')",
+    "descricao": "Evento de tecla solta",
+    "exemplo": "window.addEventListener('keyup', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('keypress')",
+    "descricao": "Evento de tecla pressionada (caracteres)",
+    "exemplo": "window.addEventListener('keypress', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('focus')",
+    "descricao": "Evento de foco",
+    "exemplo": "window.addEventListener('focus', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "window.addEventListener('blur')",
+    "descricao": "Evento de perda de foco",
+    "exemplo": "window.addEventListener('blur', funcao);",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.forEach()",
+    "descricao": "Itera sobre array",
+    "exemplo": "array.forEach(elemento => console.log(elemento));",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.map()",
+    "descricao": "Mapeia array para novo array",
+    "exemplo": "const novoArray = array.map(elemento => elemento * 2);",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.filter()",
+    "descricao": "Filtra array",
+    "exemplo": "const arrayFiltrado = array.filter(elemento => elemento > 10);",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.reduce()",
+    "descricao": "Reduz array a um valor",
+    "exemplo": "const soma = array.reduce((acumulador, elemento) => acumulador + elemento, 0);",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.find()",
+    "descricao": "Encontra primeiro elemento",
+    "exemplo": "const elementoEncontrado = array.find(elemento => elemento === 'valor');",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.indexOf()",
+    "descricao": "Encontra índice do elemento",
+    "exemplo": "const indice = array.indexOf('valor');",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.push()",
+    "descricao": "Adiciona elemento ao final do array",
+    "exemplo": "array.push('novoValor');",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.pop()",
+    "descricao": "Remove último elemento do array",
+    "exemplo": "array.pop();",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.shift()",
+    "descricao": "Remove primeiro elemento do array",
+    "exemplo": "array.shift();",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.unshift()",
+    "descricao": "Adiciona elemento ao início do array",
+    "exemplo": "array.unshift('novoValor');",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.slice()",
+    "descricao": "Cria cópia do array",
+    "exemplo": "const copia = array.slice();",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.concat()",
+    "descricao": "Concatena arrays",
+    "exemplo": "const novoArray = array1.concat(array2);",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.join()",
+    "descricao": "Junta elementos do array em string",
+    "exemplo": "const string = array.join('-');",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.sort()",
+    "descricao": "Ordena array",
+    "exemplo": "array.sort();",
+    "resultado": ""
+  },
+  {
+    "script": "Array.prototype.reverse()",
+    "descricao": "Inverte array",
+    "exemplo": "array.reverse();",
+    "resultado": ""
+  },
+  {
+    "script": "String.prototype.toUpperCase()",
+    "descricao": "Converte string para maiúsculas",
+    "exemplo": "const maiusculas = string.toUpperCase();",
+    "resultado": ""
+  },
+  {
+    "script": "String.prototype.toLowerCase()",
+    "descricao": "Converte string para minúsculas",
+    "exemplo": "const minusculas = string.toLowerCase();",
+    "resultado": ""
+  },
+  {
+    "script": "String.prototype.trim()",
+    "descricao": "Remove espaços em branco",
+    "exemplo": "const stringTrimmed = string.trim();",
+    "resultado": ""
+  },
+  {
+    "script": "String.prototype.split()",
+    "descricao": "Divide string em array",
+    "exemplo": "const arrayDeStrings = string.split(' ');",
+    "resultado": ""
+  },
+  {
+    "script": "String.prototype.replace()",
+    "descricao": "Substitui parte da string",
+    "exemplo": "const novaString = string.replace('velhaParte', 'novaParte');",
+    "resultado": ""
+  },
+  {
+    "script": "String.prototype.includes()",
+    "descricao": "Verifica se string contém substring",
+    "exemplo": "const contem = string.includes('substring');",
+    "resultado": ""
+  },
+    {
+    "script": "console.log()",
+    "descricao": "Exibe mensagem no console",
+    "exemplo": "console.log('Olá, mundo!');",
+    "resultado": ""
+  },
+  {
+    "script": "console.error()",
+    "descricao": "Exibe mensagem de erro no console",
+    "exemplo": "console.error('Ocorreu um erro!');",
+    "resultado": ""
+  },
+  {
+    "script": "console.warn()",
+    "descricao": "Exibe mensagem de aviso no console",
+    "exemplo": "console.warn('Isso é um aviso!');",
+    "resultado": ""
+  },
+  {
+    "script": "console.table()",
+    "descricao": "Exibe dados em formato de tabela no console",
+    "exemplo": "console.table(dados);",
+    "resultado": ""
+  },
+  {
+    "script": "typeof",
+    "descricao": "Retorna o tipo de dado",
+    "exemplo": "typeof variavel;",
+    "resultado": ""
+  },
+  {
+    "script": "instanceof",
+    "descricao": "Verifica se objeto é instância de uma classe",
+    "exemplo": "objeto instanceof Classe;",
+    "resultado": ""
+  },
+  {
+    "script": "try...catch",
+    "descricao": "Tratamento de erros",
+    "exemplo": "try { // Código que pode gerar erro } catch (erro) { // Tratamento do erro }",
+    "resultado": ""
+  },
+  {
+    "script": "throw",
+    "descricao": "Lança um erro",
+    "exemplo": "throw new Error('Mensagem de erro');",
+    "resultado": ""
+  },
+  {
+    "script": "debugger",
+    "descricao": "Ponto de interrupção para depuração",
+    "exemplo": "debugger;",
+    "resultado": ""
+  },
+  {
+    "script": "eval()",
+    "descricao": "Executa código JavaScript a partir de uma string",
+    "exemplo": "eval('2 + 2');",
+    "resultado": ""
+  },
+  {
+    "script": "Function.prototype.call()",
+    "descricao": "Chama uma função com um determinado contexto (this)",
+    "exemplo": "funcao.call(objeto, argumento1, argumento2);",
+    "resultado": ""
+  },
+  {
+    "script": "Function.prototype.apply()",
+    "descricao": "Chama uma função com um determinado contexto (this) e argumentos em um array",
+    "exemplo": "funcao.apply(objeto, [argumento1, argumento2]);",
+    "resultado": ""
+  },
+  {
+    "script": "Function.prototype.bind()",
+    "descricao": "Cria uma nova função com um determinado contexto (this) vinculado",
+    "exemplo": "const novaFuncao = funcao.bind(objeto);",
+    "resultado": ""
+  },
+  {
+    "script": "this",
+    "descricao": "Referência ao objeto atual",
+    "exemplo": "this.propriedade;",
+    "resultado": ""
+  },
+  {
+    "script": "arguments",
+    "descricao": "Objeto com os argumentos da função",
+    "exemplo": "function minhaFuncao() { console.log(arguments); }",
+    "resultado": ""
+  },
+  {
+    "script": "new",
+    "descricao": "Cria um novo objeto",
+    "exemplo": "const novoObjeto = new Classe();",
+    "resultado": ""
+  },
+  {
+    "script": "delete",
+    "descricao": "Remove uma propriedade de um objeto",
+    "exemplo": "delete objeto.propriedade;",
+    "resultado": ""
+  },
+  {
+    "script": "void",
+    "descricao": "Avalia uma expressão e retorna undefined",
+    "exemplo": "void 0;",
+    "resultado": ""
+  },
+  {
+    "script": "yield",
+    "descricao": "Usado em funções geradoras para pausar e retomar a execução",
+    "exemplo": "function* minhaFuncaoGeradora() { yield 1; }",
+    "resultado": ""
+  },
+  {
+    "script": "async",
+    "descricao": "Define uma função assíncrona",
+    "exemplo": "async function minhaFuncaoAssincrona() { }",
+    "resultado": ""
+  },
+  {
+    "script": "await",
+    "descricao": "Espera o resultado de uma operação assíncrona",
+    "exemplo": "const resultado = await minhaFuncaoAssincrona();",
+    "resultado": ""
+  },
+  {
+    "script": "import",
+    "descricao": "Importa módulos",
+    "exemplo": "import modulo from 'modulo';",
+    "resultado": ""
+  },
+  {
+    "script": "export",
+    "descricao": "Exporta módulos",
+    "exemplo": "export default minhaFuncao;",
+    "resultado": ""
+  },
+  {
+    "script": "class",
+    "descricao": "Define uma classe",
+    "exemplo": "class MinhaClasse { }",
+    "resultado": ""
+  },
+  {
+    "script": "extends",
+    "descricao": "Herança de classes",
+    "exemplo": "class MinhaClasseFilha extends MinhaClassePai { }",
+    "resultado": ""
+  },
+  {
+    "script": "super",
+    "descricao": "Chama o construtor da classe pai",
+    "exemplo": "super();",
+    "resultado": ""
+  },
+  {
+    "script": "static",
+    "descricao": "Define um método estático",
+    "exemplo": "static meuMetodoEstatico() { }",
+    "resultado": ""
+  },
+  {
+    "script": "get",
+    "descricao": "Define um getter",
+    "exemplo": "get minhaPropriedade() { }",
+    "resultado": ""
+  },
+  {
+    "script": "set",
+    "descricao": "Define um setter",
+    "exemplo": "set minhaPropriedade(valor) { }",
+    "resultado": ""
+  },
+  {
+    "script": "Symbol",
+    "descricao": "Tipo de dado Symbol",
+    "exemplo": "const meuSymbol = Symbol('descricao');",
+    "resultado": ""
+  },
+  {
+    "script": "Map",
+    "descricao": "Objeto Map (chave-valor)",
+    "exemplo": "const meuMap = new Map();",
+    "resultado": ""
+  },
+  {
+    "script": "Set",
+    "descricao": "Objeto Set (conjunto de valores únicos)",
+    "exemplo": "const meuSet = new Set();",
+    "resultado": ""
+  },
+  {
+    "script": "Promise",
+    "descricao": "Objeto Promise (para operações assíncronas)",
+    "exemplo": "const minhaPromise = new Promise((resolve, reject) => { });",
+    "resultado": ""
+  },
+  {
+    "script": "Generator",
+    "descricao": "Função geradora",
+    "exemplo": "function* minhaFuncaoGeradora() { }",
+    "resultado": ""
+  },
+  {
+    "script": "Proxy",
+    "descricao": "Objeto Proxy (para interceptar operações)",
+    "exemplo": "const meuProxy = new Proxy(objeto, manipulador);",
+    "resultado": ""
+  },
+  {
+    "script": "Reflect",
+    "descricao": "Objeto Reflect (métodos para reflexão)",
+    "exemplo": "Reflect.get(objeto, 'propriedade');",
+    "resultado": ""
+  },
+  {
+    "script": "Intl",
+    "descricao": "Objeto Intl (para internacionalização)",
+    "exemplo": "const formatador = new Intl.NumberFormat('pt-BR');",
+    "resultado": ""
+  },
+  {
+    "script": "RegExp",
+    "descricao": "Objeto RegExp (expressões regulares)",
+    "exemplo": "const regex = new RegExp('padrão');",
+    "resultado": ""
+  },
+  {
+    "script": "Date",
+    "descricao": "Objeto Date (data e hora)",
+    "exemplo": "const data = new Date();",
+    "resultado": ""
+  },
+  {
+    "script": "Math",
+    "descricao": "Objeto Math (funções matemáticas)",
+    "exemplo": "Math.PI;",
+    "resultado": ""
+  },
+  {
+    "script": "Math.abs()",
+    "descricao": "Valor absoluto",
+    "exemplo": "Math.abs(-10);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.ceil()",
+    "descricao": "Arredonda para cima",
+    "exemplo": "Math.ceil(4.5);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.floor()",
+    "descricao": "Arredonda para baixo",
+    "exemplo": "Math.floor(4.5);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.round()",
+    "descricao": "Arredonda para o inteiro mais próximo",
+    "exemplo": "Math.round(4.5);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.max()",
+    "descricao": "Valor máximo",
+    "exemplo": "Math.max(1, 2, 3);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.min()",
+    "descricao": "Valor mínimo",
+    "exemplo": "Math.min(1, 2, 3);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.pow()",
+    "descricao": "Potência",
+    "exemplo": "Math.pow(2, 3);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.sqrt()",
+    "descricao": "Raiz quadrada",
+    "exemplo": "Math.sqrt(9);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.random()",
+    "descricao": "Número aleatório entre 0 e 1",
+    "exemplo": "Math.random();",
+    "resultado": ""
+  },
+  {
+    "script": "Math.sin()",
+    "descricao": "Seno",
+    "exemplo": "Math.sin(0);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.cos()",
+    "descricao": "Cosseno",
+    "exemplo": "Math.cos(0);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.tan()",
+    "descricao": "Tangente",
+    "exemplo": "Math.tan(0);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.log()",
+    "descricao": "Logaritmo natural",
+    "exemplo": "Math.log(10);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.exp()",
+    "descricao": "Exponencial",
+    "exemplo": "Math.exp(1);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.atan2()",
+    "descricao": "Arco tangente 2",
+    "exemplo": "Math.atan2(1, 1);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.acos()",
+    "descricao": "Arco cosseno",
+    "exemplo": "Math.acos(1);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.asin()",
+    "descricao": "Arco seno",
+    "exemplo": "Math.asin(0);",
+    "resultado": ""
+  },
+  {
+    "script": "Math.atan()",
+    "descricao": "Arco tangente",
+    "exemplo": "Math.atan(0);",
+    "resultado": ""
+  },
+  {
+    "script": "Number.prototype.toFixed()",
+    "descricao": "Formata número com casas decimais",
+    "exemplo": "const numero = 10.555; numero.toFixed(2);",
+    "resultado": ""
+  },
+  {
+    "script": "Number.prototype.toPrecision()",
+    "descricao": "Formata número com precisão",
+    "exemplo": "const numero = 10.555; numero.toPrecision(2);",
+    "resultado": ""
+  },
+  {
+    "script": "Number.isFinite()",
+    "descricao": "Verifica se é número finito",
+    "exemplo": "Number.isFinite(10);",
+    "resultado": ""
+  },
+  {
+    "script": "Number.isNaN()",
+    "descricao": "Verifica se é NaN",
+    "exemplo": "Number.isNaN(NaN);",
+    "resultado": ""
+  },
+  {
+    "script": "Number.isInteger()",
+    "descricao": "Verifica se é inteiro",
+    "exemplo": "Number.isInteger(10);",
+    "resultado": ""
+  },
+  {
+    "script": "Number.parseFloat()",
+    "descricao": "Converte para float",
+    "exemplo": "Number.parseFloat('10.5');",
+    "resultado": ""
+  },
+  {
+    "script": "Number.parseInt()",
+    "descricao": "Converte para inteiro",
+    "exemplo": "Number.parseInt('10');",
+    "resultado": ""
+  },
+  {
+    "script": "Date.now()",
+    "descricao": "Tempo atual em milissegundos",
+    "exemplo": "Date.now();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.getDate()",
+    "descricao": "Dia do mês",
+    "exemplo": "const data = new Date(); data.getDate();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.getMonth()",
+    "descricao": "Mês (0-11)",
+    "exemplo": "const data = new Date(); data.getMonth();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.getFullYear()",
+    "descricao": "Ano com 4 dígitos",
+    "exemplo": "const data = new Date(); data.getFullYear();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.getHours()",
+    "descricao": "Horas",
+    "exemplo": "const data = new Date(); data.getHours();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.getMinutes()",
+    "descricao": "Minutos",
+    "exemplo": "const data = new Date(); data.getMinutes();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.getSeconds()",
+    "descricao": "Segundos",
+    "exemplo": "const data = new Date(); data.getSeconds();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.getMilliseconds()",
+    "descricao": "Milissegundos",
+    "exemplo": "const data = new Date(); data.getMilliseconds();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.toLocaleDateString()",
+    "descricao": "Data formatada",
+    "exemplo": "const data = new Date(); data.toLocaleDateString();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.toLocaleTimeString()",
+    "descricao": "Hora formatada",
+    "exemplo": "const data = new Date(); data.toLocaleTimeString();",
+    "resultado": ""
+  },
+  {
+    "script": "Date.prototype.toLocaleString()",
+    "descricao": "Data e hora formatadas",
+    "exemplo": "const data = new Date(); data.toLocaleString();",
+    "resultado": ""
+  },
+  {
+    "script": "JSON.parse()",
+    "descricao": "Converte JSON para objeto JavaScript",
+    "exemplo": "JSON.parse(stringJson);",
+    "resultado": ""
+  },
+  {
+    "script": "JSON.stringify()",
+    "descricao": "Converte objeto JavaScript para JSON",
+    "exemplo": "JSON.stringify(objeto);",
+    "resultado": ""
+  },
+{
+    "script": "console.log()",
+    "descricao": "Exibe mensagem no console",
+    "exemplo": "console.log('Olá, mundo!');",
+    "resultado": ""
+  },
+  {
+    "script": "console.error()",
+    "descricao": "Exibe mensagem de erro no console",
+    "exemplo": "console.error('Ocorreu um erro!');",
+    "resultado": ""
+  },
+  {
+    "script": "console.warn()",
+    "descricao": "Exibe mensagem de aviso no console",
+    "exemplo": "console.warn('Isso é um aviso!');",
+    "resultado": ""
+  },
+  {
+    "script": "console.table()",
+    "descricao": "Exibe dados em formato de tabela no console",
+    "exemplo": "console.table(dados);",
+    "resultado": ""
+  },
+  {
+    "script": "typeof",
+    "descricao": "Retorna o tipo de dado",
+    "exemplo": "typeof variavel;",
+    "resultado": ""
+  },
+  {
+    "script": "instanceof",
+    "descricao": "Verifica se objeto é instância de uma classe",
+    "exemplo": "objeto instanceof Classe;",
+    "resultado": ""
+  },
+  {
+    "script": "try...catch",
+    "descricao": "Tratamento de erros",
+    "exemplo": "try { // Código que pode gerar erro } catch (erro) { // Tratamento do erro }",
+    "resultado": ""
+  },
+  {
+    "script": "throw",
+    "descricao": "Lança um erro",
+    "exemplo": "throw new Error('Mensagem de erro');",
+    "resultado": ""
+  },
+  {
+    "script": "debugger",
+    "descricao": "Ponto de interrupção para depuração",
+    "exemplo": "debugger;",
+    "resultado": ""
+  },
+  {
+    "script": "eval()",
+    "descricao": "Executa código JavaScript a partir de uma string",
+    "exemplo": "eval('2 + 2');",
+    "resultado": ""
+  },
+  {
+    "script": "Function.prototype.call()",
+    "descricao": "Chama uma função com um determinado contexto (this)",
+    "exemplo": "funcao.call(objeto, argumento1, argumento2);",
+    "resultado": ""
+  },
+  {
+    "script": "Function.prototype.apply()",
+    "descricao": "Chama uma função com um determinado contexto (this) e argumentos em um array",
+    "exemplo": "funcao.apply(objeto, [argumento1, argumento2]);",
+    "resultado": ""
+  },
+  {
+    "script": "Function.prototype.bind()",
+    "descricao": "Cria uma nova função com um determinado contexto (this) vinculado",
+    "exemplo": "const novaFuncao = funcao.bind(objeto);",
+    "resultado": ""
+  },
+  {
+    "script": "this",
+    "descricao": "Referência ao objeto atual",
+    "exemplo": "this.propriedade;",
+    "resultado": ""
+  },
+  {
+    "script": "arguments",
+    "descricao": "Objeto com os argumentos da função",
+    "exemplo": "function minhaFuncao() { console.log(arguments); }",
+    "resultado": ""
+  },
+  {
+    "script": "new",
+    "descricao": "Cria um novo objeto",
+    "exemplo": "const novoObjeto = new Classe();",
+    "resultado": ""
+  },
+  {
+    "script": "delete",
+    "descricao": "Remove uma propriedade de um objeto",
+    "exemplo": "delete objeto.propriedade;",
+    "resultado": ""
+  },
+  {
+    "script": "void",
+    "descricao": "Avalia uma expressão e retorna undefined",
+    "exemplo": "void 0;",
+    "resultado": ""
+  },
+  {
+    "script": "yield",
+    "descricao": "Usado em funções geradoras para pausar e retomar a execução",
+    "exemplo": "function* minhaFuncaoGeradora() { yield 1; }",
+    "resultado": ""
+  },
+  {
+    "script": "async",
+    "descricao": "Define uma função assíncrona",
+    "exemplo": "async function minhaFuncaoAssincrona() { }",
+    "resultado": ""
+  },
+  {
+    "script": "await",
+    "descricao": "Espera o resultado de uma operação assíncrona",
+    "exemplo": "const resultado = await minhaFuncaoAssincrona();",
+    "resultado": ""
+  },
+  {
+    "script": "import",
+    "descricao": "Importa módulos",
+    "exemplo": "import modulo from 'modulo';",
+    "resultado": ""
+  },
+  {
+    "script": "export",
+    "descricao": "Exporta módulos",
+    "exemplo": "export default minhaFuncao;",
+    "resultado": ""
+  },
+  {
+    "script": "class",
+    "descricao": "Define uma classe",
+    "exemplo": "class MinhaClasse { }",
+    "resultado": ""
+  },
+  {
+    "script": "extends",
+    "descricao": "Herança de classes",
+    "exemplo": "class MinhaClasseFilha extends MinhaClassePai { }",
+    "resultado": ""
+  },
+  {
+    "script": "super",
+    "descricao": "Chama o construtor da classe pai",
+    "exemplo": "super();",
+    "resultado": ""
+  },
+  {
+    "script": "static",
+    "descricao": "Define um método estático",
+    "exemplo": "static meuMetodoEstatico() { }",
+    "resultado": ""
+  },
+  {
+    "script": "get",
+    "descricao": "Define um getter",
+    "exemplo": "get minhaPropriedade() { }",
+    "resultado": ""
+  },
+  {
+    "script": "set",
+    "descricao": "Define um setter",
+    "exemplo": "set minhaPropriedade(valor) { }",
+    "resultado": ""
+  },
+  {
+    "script": "Symbol",
+    "descricao": "Tipo de dado Symbol",
+    "exemplo": "const meuSymbol = Symbol('descricao');",
+    "resultado": ""
+  },
+  {
+    "script": "Map",
+    "descricao": "Objeto Map (chave-valor)",
+    "exemplo": "const meuMap = new Map();",
+    "resultado": ""
+  },
+  {
+    "script": "Set",
+    "descricao": "Objeto Set (conjunto de valores únicos)",
+    "exemplo": "const meuSet = new Set();",
+    "resultado": ""
+  },
+  {
+    "script": "Promise",
+    "descricao": "Objeto Promise (para operações assíncronas)",
+    "exemplo": "const minhaPromise = new Promise((resolve, reject) => { });",
+    "resultado": ""
+  },
+  {
+    "script": "Generator",
+    "descricao": "Função geradora",
+    "exemplo": "function* minhaFuncaoGeradora() { }",
+    "resultado": ""
+  },
+  {
+    "script": "Proxy",
+    "descricao": "Objeto Proxy (para interceptar operações)",
+    "exemplo": "const meuProxy = new Proxy(objeto, manipulador);",
+    "resultado": ""
+  },
+  {
+    "script": "Reflect",
+    "descricao": "Objeto Reflect (métodos para reflexão)",
+    "exemplo": "Reflect.get(objeto, 'propriedade');",
+    "resultado": ""
+  },
+  {
+    "script": "Intl",
+    "descricao": "Objeto Intl (para internacionalização)",
+    "exemplo": "const formatador = new Intl.NumberFormat('pt-BR');",
+    "resultado": ""
+  },
+  {
+    "script": "RegExp",
+    "descricao": "Objeto RegExp (expressões regulares)",
+    "exemplo": "const regex = new RegExp('padrão');",
+    "resultado": ""
+  },
+  {
+    "script": "Date",
+    "descricao": "Objeto Date (data e hora)",
+    "exemplo": "const data = new Date();",
+    "resultado": ""
+  },
+  {
+    "script": "Math",
+    "descricao": "Objeto Math (funções matemáticas)",

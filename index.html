@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio de Rafael Martiniano</title>
+  <meta name="description" content="Bem-vindo ao portfólio de Rafael Martiniano. Explore projetos, habilidades e entre em contato.">
+  <link rel="stylesheet" href="Home/styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="Projetos/assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body class="terminal-theme">
+  <div class="background-gradient"></div>
+  <div class="computer">
+    <div class="computer-screen">
+      <!-- Botão de Desligar -->
+      <button class="close-button" aria-label="Desligar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v10"></path>
+          <path d="M5.5 4.2A10 10 0 1 0 18.5 4.2"></path>
+        </svg>
+      </button>
+     
+      <div class="terminal">
+        <div class="terminal-header">
+          <span class="terminal-title">Bem-vindo ao Portfólio de Rafael Martiniano</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line">C:\> Olá, eu sou Rafael Martiniano</p>
+          <p class="terminal-line">C:\> Desenvolvedor Front-End apaixonado por criar experiências digitais incríveis.</p>
+          <p class="terminal-line">C:\> Explore meus projetos, habilidades e entre em contato.</p>
+          <div class="terminal-links">
+            <a href="Home/pages/projetos/projetos.html" class="btn-terminal">Ver Projetos</a>
+            <a href="Home/pages/contact/contact.html" class="btn-terminal">Entre em Contato</a>
+            <!-- Novo botão de ajuda -->
+            <button id="helpButton" class="help-btn">
+              <i class="material-icons">Ajuda</i> 
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="computer-base"></div>
+    <div class="computer-keyboard"></div>
+    <div class="computer-mouse"></div>
+  </div>
+
+  <!-- Popup de Ajuda -->
+  <div id="helpPopup" class="terminal popup" role="dialog" aria-labelledby="popupTitle" aria-describedby="popupDescription">
+    <div class="terminal-header">
+      <span id="popupTitle" class="terminal-title">Ajuda</span>
+      <button class="close-button" aria-label="Fechar Popup" onclick="closeHelpPopup()">&times;</button>
+    </div>
+    <div class="terminal-body">
+      <p id="popupDescription" class="terminal-line">C:\> Bem-vindo ao meu Portfólio!</p>
+      <p class="terminal-line">C:\> Este portfólio foi projetado como um computador interativo.</p>
+      <p class="terminal-line">C:\> Use os links no terminal para navegar entre as páginas.</p>
+      <p class="terminal-line">C:\> Clique no botão de desligar (⏻) para ser redirecionado ao Google.</p>
+    </div>
+  </div>
+
+  <button id="back-to-top" aria-label="Voltar ao topo">↑</button>
+
+  <script>
+    // Simulação de digitação no terminal
+    document.addEventListener('DOMContentLoaded', () => {
+      const lines = document.querySelectorAll('.terminal-line');
+      lines.forEach((line, index) => {
+        line.style.opacity = '0';
+        setTimeout(() => {
+          line.style.opacity = '1';
+          line.style.transition = 'opacity 0.3s ease-in-out';
+        }, index * 750);
+      });
+
+      // Botão de desligar
+      const closeButton = document.querySelector('.close-button');
+      closeButton.addEventListener('click', () => {
+        document.body.classList.add('shutdown');
+        setTimeout(() => {
+          alert('O computador foi desligado. Obrigado por visitar!');
+          window.location.href = 'https://www.google.com';
+        }, 1000);
+      });
+
+      // Evento de clique para abrir o popup de ajuda
+      const helpButton = document.getElementById('helpButton');
+      if (helpButton) {
+        helpButton.addEventListener('click', openHelpPopup);
+      }
+    });
+
+    // Função para abrir o popup de ajuda
+    function openHelpPopup() {
+      document.getElementById('helpPopup').style.display = 'block';
+    }
+
+    // Função para fechar o popup de ajuda
+    function closeHelpPopup() {
+      document.getElementById('helpPopup').style.display = 'none';
+    }
+  </script>
+</body>
+</html>

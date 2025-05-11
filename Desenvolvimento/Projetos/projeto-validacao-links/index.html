@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Validador de Site - Mixed Content & Erros</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        input, button { margin: 10px 0; padding: 10px; }
+        .result { 
+            margin-top: 20px; 
+            padding: 15px; 
+            background: #f7f7f7; 
+            border: 1px solid #ddd; 
+            max-height: 400px; 
+            overflow-y: auto; 
+        }
+        .success { color: green; }
+        .warning { color: orange; }
+        .error { color: red; }
+        .log { font-size: 0.9em; margin: 5px 0; }
+    </style>
+</head>
+<body>
+
+<h2>Validador de Site - Verificação de Erros Comuns</h2>
+<p>Informe a URL da página para análise:</p>
+<input type="url" id="siteUrl" placeholder="https://www.exemplo.com">
+<button class="btn" onclick="analisar()">Analisar Página</button>
+
+<div class="result" id="result">Resultados aparecerão aqui...</div>
+<br>
+<button class="btn-secondary" onclick="limpar()">Limpar Resultados</button>
+<script src="checker.js"></script>
+
+</body>
+</html>

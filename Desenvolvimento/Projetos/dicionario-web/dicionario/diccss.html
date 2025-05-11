@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dicionário CSS</title>
+    <link rel="stylesheet" href="../estilo/styles.css">
+    <style>
+        /* Estilos CSS para melhorar a aparência */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+
+        nav ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .tags-grid {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .tag-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .modal #fecharModalBtn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dicionário CSS</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Início</a></li>
+                <li><a href="dichtml.html">HTML</a></li>
+                <li><a href="dicjs.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tags">
+            <h2>Classes CSS</h2>
+            <ul class="tags-grid">
+                <!-- As classes CSS serão inseridas aqui -->
+            </ul>
+        </section>
+    </main>
+
+    <div id="modalDetalhes" class="modal">
+        <div class="modal-content">
+            <span id="fecharModalBtn">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalDescricao"></p>
+            <p id="modalSintaxe"></p>
+            <div id="modalExemploPratico"></div>
+            <div id="modalResultadoExemplo"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Dicionário de Desenvolvimento Web</p>
+    </footer>
+
+    <script>
+        // Dados das classes CSS
+        const classesCSS = [
+            {
+                classe: 'container',
+                descricao: 'Container principal',
+                exemplo: '&lt;div class="container"&gt;Conteúdo&lt;/div&gt;',
+                resultado: '<div class="container">Conteúdo</div>'
+            },
+            {
+                classe: 'text-center',
+                descricao: 'Centralizar texto',
+                exemplo: '&lt;p class="text-center"&gt;Texto centralizado&lt;/p&gt;',
+                resultado: '<p class="text-center">Texto centralizado</p>'
+            },
+            {
+                classe: 'btn',
+                descricao: 'Botão',
+                exemplo: '&lt;button class="btn"&gt;Botão&lt;/button&gt;',
+                resultado: '<button class="btn">Botão</button>'
+            },
+            {
+                classe: 'btn-primary',
+                descricao: 'Botão primário',
+                exemplo: '&lt;button class="btn btn-primary"&gt;Botão&lt;/button&gt;',
+                resultado: '<button class="btn btn-primary">Botão</button>'
+            },
+            {
+                classe: 'btn-secondary',
+                descricao: 'Botão secundário',
+                exemplo: '&lt;button class="btn btn-secondary"&gt;Botão&lt;/button&gt;',
+                resultado: '<button class="btn btn-secondary">Botão</button>'
+            },
+            {
+                classe: 'hidden',
+                descricao: 'Elementos ocultos',
+                exemplo: '&lt;div class="hidden"&gt;Conteúdo oculto&lt;/div&gt;',
+                resultado: '<div class="hidden">Conteúdo oculto</div>'
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const tagsGrid = document.querySelector('.tags-grid');
+            const modalDetalhes = document.getElementById('modalDetalhes');
+            const fecharModalBtn = document.getElementById('fecharModalBtn');
+            const modalTitulo = document.getElementById('modalTitulo');
+            const modalDescricao = document.getElementById('modalDescricao');
+            const modalSintaxe = document.getElementById('modalSintaxe');
+            const modalExemploPratico = document.getElementById('modalExemploPratico');
+            const modalResultadoExemplo = document.getElementById('modalResultadoExemplo');
+
+            // Preenche a lista de classes CSS
+            classesCSS.forEach(item => {
+                const li = document.createElement('li');
+                li.classList.add('tag-card');
+                li.dataset.classe = item.classe;
+                li.textContent = item.classe;
+                tagsGrid.appendChild(li);
+            });
+
+            // Adiciona evento de clique aos cards
+            tagsGrid.addEventListener('click', (event) => {
+                const tagCard = event.target.closest('.tag-card');
+                if (tagCard) {
+                    const nome = tagCard.dataset.classe;
+                    const item = classesCSS.find(i => i.classe === nome);
+                    if (item) {
+                        modalTitulo.textContent = item.classe;
+                        modalDescricao.innerHTML = item.descricao;
+                        modalSintaxe.innerHTML = item.exemplo;
+                        modalExemploPratico.innerHTML = item.exemplo;
+                        modalResultadoExemplo.innerHTML = item.resultado;
+                        modalDetalhes.style.display = 'flex';
+                    }
+                }
+            });
+
+            // Adiciona evento de clique ao botão de fechar do modal
+            fecharModalBtn.addEventListener('click', () => {
+                modalDetalhes.style.display = 'none';
+            });
+
+            // Fecha o modal ao clicar fora dele
+            window.addEventListener('click', (event) => {
+                if (event.target === modalDetalhes) {
+                    modalDetalhes.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

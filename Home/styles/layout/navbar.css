@@ -1,0 +1,152 @@
+/* Barra de navegação */
+.nav__brand a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+/* Navegação */
+.nav {
+    position: fixed; /* Posição fixa */
+    width: 100%; /* Largura total */
+    top: 0; /* Alinha ao topo */
+    left: 0; /* Alinha à esquerda */
+    z-index: 10; /* Z-index para sobrepor outros elementos */
+    display: flex; /* Flexbox */
+    justify-content: space-between; /* Espaço entre os itens */
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    padding: 30px 20px; /* Padding */
+    background: rgba(0, 0, 0, 0.6); /* Fundo levemente transparente */
+    border-radius: 0px;
+    color: var(--text-color); /* Cor do texto */
+}
+
+/* Botão hambúrguer (mobile) */
+.hamburger {
+    position: absolute; /* Posição absoluta */
+    top: 15px; /* Alinha ao topo */
+    right: 20px; /* Alinha à direita */
+    cursor: pointer; /* Cursor de ponteiro */
+    display: none; /* Esconde no desktop */
+    flex-direction: column; /* Flexbox em coluna */
+    z-index: 3; /* Z-index para sobrepor outros elementos */
+}
+
+/* Linhas do ícone do menu */
+.hamburger span {
+    width: 30px; /* Largura */
+    height: 4px; /* Altura */
+    background: var(--highlight-color); /* Cor de fundo */
+    margin: 5px 0; /* Margem */
+    transition: all 0.3s; /* Transição */
+}
+
+/* Menu de navegação */
+.nav-links {
+    display: flex; /* Flexbox */
+    gap: 20px; /* Espaço entre os itens */
+    list-style: none; /* Remove estilo de lista */
+}
+
+/* Links do menu */
+.nav__link {
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: 500; /* Peso da fonte */
+    transition: color 0.3s ease, transform 0.3s ease; /* Adiciona transição para hover */
+}
+
+.nav__link:hover {
+    color: var(--secondary-color); /* Cor do texto ao passar o mouse */
+    transform: scale(1.1); /* Adiciona animação de escala */
+}
+
+/* Adicione esta regra para indicar o link ativo */
+.nav__link.active {
+    font-weight: bold; /* Ou qualquer outro estilo para destacar o link ativo */
+    color: var(--highlight-color);
+}
+
+/* Estilização do menu no mobile */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; /* Mostra o botão no mobile */
+    }
+
+    .nav-links {
+        display: none; /* Esconde o menu por padrão */
+        flex-direction: column; /* Flexbox em coluna */
+        position: absolute; /* Posição absoluta */
+        top: 60px; /* Alinha ao topo */
+        right: 0; /* Alinha à direita */
+        width: 100%; /* Largura total */
+        background: rgba(0, 0, 0, 0.9); /* Fundo escuro para o menu */
+        padding: 10px 0; /* Padding */
+        text-align: center; /* Alinha texto ao centro */
+    }
+
+    /* Menu aparece quando ativo */
+    .nav-links.active {
+        display: flex; /* Mostra o menu */
+    }
+}
+
+/* Barra de navegação */
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: var(--text-color);
+  }
+  
+  .nav__brand a {
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav__link {
+    color: var(--text-color);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav__link:hover {
+    color: var(--secondary-color);
+  }
+  
+  .hamburger {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+    }
+    
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 60px;
+      width: 100%;
+      padding: 10px 0;
+    }
+    
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  

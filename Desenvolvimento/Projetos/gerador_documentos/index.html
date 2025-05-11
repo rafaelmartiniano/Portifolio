@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RM - Portfólio - Projetos</title>
+  <meta name="description" content="Conheça os projetos desenvolvidos por Rafael Martiniano.">
+  <link rel="stylesheet" href="../../styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Cabeçalho com Banner, Navegação e Título -->
+  <header class="header">
+    <div class="container">
+        <nav class="nav">
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <!-- Menu de três linhas para dispositivos móveis -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-links" id="nav-links">
+                <a href="../../index.html" class="nav__link"><i class="material-icons">home</i> Início</a>
+                <a href="../sobre/sobre.html" class="nav__link"><i class="material-icons">info</i> Sobre</a>
+                <a href="../skills/skills.html" class="nav__link"><i class="material-icons">build</i> Habilidades</a>
+                <a href="projetos.html" class="nav__link"><i class="material-icons">code</i> Projetos</a>
+                <a href="../contact/contact.html" class="nav__link"><i class="material-icons">mail</i> Contato</a>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="gradient-text">Projetos</span>
+            </h1>
+            <p>Conheça os projetos desenvolvidos por Rafael Martiniano.</p>
+        </div>
+    </div>
+  </header>
+
+  <!-- Conteúdo Principal -->
+  <main class="container">
+    <!-- Seção de Projetos -->
+    <section class="section">
+      <h2>Projetos em Destaque</h2>
+      <div class="project-grid">
+        <!-- Projeto Amigo Secreto -->
+        <div class="project-card">
+          <h3>Projeto Amigo Secreto</h3>
+          <p>Aplicação para sorteio de amigo secreto, onde os participantes podem adicionar seus nomes e realizar o sorteio garantindo que ninguém sorteie a si mesmo.</p>
+          <div class="btn-group">
+            <a href="https://rmartinione.github.io/Challenge-AluraOne/challenge-amigo-secreto/index.html" class="btn" target="_blank">Ver Projeto</a>
+            <button class="btn-secondary toggle-details">Saiba Mais</button>
+          </div>
+          <div class="project-details">
+            <p>O Projeto Amigo Secreto foi desenvolvido como parte do desafio Alura. Ele permite que os usuários adicionem seus nomes e realizem o sorteio de forma justa, garantindo que ninguém sorteie a si mesmo. A aplicação foi construída utilizando HTML, CSS e JavaScript, com foco em usabilidade e experiência do usuário.</p>
+          </div>
+        </div>
+        <!-- Desafio de Lógica com JavaScript -->
+        <div class="project-card">
+          <h3>Desafio de Lógica com JavaScript</h3>
+          <p>Projeto voltado para a lógica de programação, onde são resolvidos diversos desafios utilizando JavaScript.</p>
+          <div class="btn-group">
+            <a href="https://rmartinione.github.io/Challenge-AluraOne/challenge-logica-js/index.html" class="btn" target="_blank">Ver Projeto</a>
+            <button class="btn-secondary toggle-details">Saiba Mais</button>
+          </div>
+          <div class="project-details">
+            <p>Este projeto é focado em resolver problemas de lógica de programação utilizando JavaScript. Ele inclui uma série de desafios que testam habilidades em algoritmos, estruturas de dados e resolução de problemas. Cada desafio é acompanhado de uma explicação detalhada das soluções implementadas, destacando as melhores práticas e técnicas de otimização.</p>
+          </div>
+        </div>
+        <!-- Gerador de Documentos -->
+        <div class="project-card">
+          <h3>Gerador de Documentos</h3>
+          <p>Aplicação para gerar documentos técnicos automaticamente com base em templates predefinidos.</p>
+          <div class="btn-group">
+            <a href="../../Projetos/gerador_documentos/index.html" class="btn" target="_blank">Ver Projeto</a>
+            <button class="btn-secondary toggle-details">Saiba Mais</button>
+          </div>
+          <div class="project-details">
+            <p>Este projeto foi desenvolvido para facilitar a criação de documentos técnicos. Utilizando templates predefinidos, o usuário pode gerar documentos completos preenchendo apenas os campos necessários. A aplicação foi construída utilizando HTML, CSS e JavaScript, com foco em eficiência e praticidade.</p>
+            <button class="btn" id="generateBtn">Gerar Documento</button>
+            <button class="btn-secondary" id="printBtn">Imprimir Documento</button>
+            <button class="btn-secondary" id="clearBtn">Limpar</button>
+          </div>
+        </div>
+        <!-- Organizador de Texto -->
+        <div class="project-card">
+          <h3>Organizador de Texto</h3>
+          <p>Ferramenta para organizar e formatar textos automaticamente, facilitando a leitura e a estruturação de documentos.</p>
+          <div class="btn-group">
+            <a href="../../Projetos/organizador-texto/index.html" class="btn" target="_blank">Ver Projeto</a>
+            <button class="btn-secondary toggle-details">Saiba Mais</button>
+          </div>
+          <div class="project-details">
+            <p>Este projeto foi desenvolvido para ajudar na organização e formatação de textos. A ferramenta permite que o usuário insira um texto e o organize automaticamente, adicionando quebras de linha e formatando o conteúdo para melhorar a legibilidade. A aplicação foi construída utilizando HTML, CSS e JavaScript, aplicando os conhecimentos adquiridos no curso.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Boas Práticas -->
+    <section class="section">
+      <h2>Boas Práticas em Desenvolvimento</h2>
+      <p>Seguir boas práticas é essencial para manter um código limpo e eficiente. Aqui estão algumas recomendações:</p>
+      <ul>
+        <li>Escrever código bem estruturado e documentado.</li>
+        <li>Seguir princípios de desenvolvimento como SOLID.</li>
+        <li>Manter um fluxo de versionamento eficiente com Git.</li>
+        <li>Utilizar testes automatizados sempre que possível.</li>
+      </ul>
+    </section>
+
+    <!-- Seção Agile e Scrum -->
+    <section class="section">
+      <h2>Metodologias Ágeis e Scrum</h2>
+      <p>Scrum é um framework ágil que ajuda na organização e entrega eficiente de projetos. Principais conceitos:</p>
+      <ul>
+        <li><strong>Sprints:</strong> Períodos curtos de desenvolvimento com metas definidas.</li>
+        <li><strong>Daily Stand-ups:</strong> Reuniões rápidas para alinhar tarefas.</li>
+        <li><strong>Backlog:</strong> Lista organizada de tarefas pendentes.</li>
+      </ul>
+    </section>
+
+    <!-- Seção de Links Úteis -->
+    <section class="section">
+      <h2>Links Úteis para Estudos</h2>
+      <ul>
+        <li><a href="https://www.scrumguides.org" target="_blank">Guia Oficial do Scrum</a></li>
+        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://docs.oracle.com" target="_blank">Documentação Oficial da Oracle</a></li>
+        <li><a href="https://docs.github.com" target="_blank">Documentação do GitHub</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer__container">
+        <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/rafael-martiniano" target="_blank" class="footer__social-link" aria-label="LinkedIn">
+                <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/rmartinione" target="_blank" class="footer__social-link" aria-label="GitHub">
+                <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+            </a>
+        </div>
+        <div class="footer__info">
+            <p>© 2025 - Meu Portfólio. Todos os direitos reservados.</p>
+            <p>Criado com ☕ e código. Entre em contato:</p>
+        </div>
+    </div>
+</footer>
+
+  <script src="../../scripts/script.js"></script>
+</body>
+</html>

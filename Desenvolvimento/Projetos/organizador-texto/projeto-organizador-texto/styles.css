@@ -1,0 +1,91 @@
+/* Estilos básicos para o corpo da página */
+body {
+    background: linear-gradient(to right, #a8e063, #56ab2f); /* Fundo gradiente verde */
+    color: #333; /* Cor da fonte ajustada para melhor legibilidade */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos para o contêiner principal */
+.container {
+    background-color: #ffffff; /* Define a cor de fundo do contêiner */
+    color: #333; /* Cor da fonte ajustada para melhor legibilidade */
+    padding: 30px; /* Adiciona espaçamento interno */
+    border-radius: 10px; /* Arredonda as bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao redor do contêiner */
+    max-width: 600px; /* Define a largura máxima do contêiner */
+    width: 100%; /* Define a largura do contêiner */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+}
+
+/* Estilos para o título */
+h1 {
+    text-align: center; /* Centraliza o texto */
+    color: #00796b; /* Define a cor do texto */
+}
+
+/* Estilos para a área de texto */
+textarea {
+    width: 100%; /* Define a largura da área de texto */
+    height: 300px; /* Define a altura da área de texto */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior */
+    padding: 15px; /* Adiciona espaçamento interno */
+    border: 1px solid #b0bec5; /* Define a borda da área de texto */
+    border-radius: 5px; /* Arredonda as bordas */
+    font-size: 16px; /* Define o tamanho da fonte */
+    resize: none; /* Desabilita o redimensionamento */
+    background-color: #e0f7fa; /* Define a cor de fundo da área de texto */
+    color: #333; /* Cor da fonte ajustada para melhor legibilidade */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Estilos para os botões */
+.buttons {
+    display: flex; /* Usa flexbox para alinhar os botões */
+    justify-content: space-between; /* Espaça os botões igualmente */
+}
+
+button {
+    width: 48%; /* Define a largura dos botões */
+    padding: 15px; /* Adiciona espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Arredonda as bordas */
+    background-color: #00796b; /* Define a cor de fundo */
+    color: #ffffff; /* Define a cor do texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    cursor: pointer; /* Define o cursor como ponteiro ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona uma transição suave para a cor de fundo e transformação */
+}
+
+/* Estilos para os botões ao passar o mouse */
+button:hover {
+    background-color: #004d40; /* Altera a cor de fundo ao passar o mouse */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão */
+}
+
+/* Estilos para a mensagem de sucesso/erro */
+#mensagem {
+    margin-top: 20px; /* Adiciona espaçamento superior */
+    text-align: center; /* Centraliza o texto */
+    font-size: 16px; /* Define o tamanho da fonte */
+    color: #3c763d; /* Texto verde escuro */
+    background-color: #dff0d8; /* Fundo verde claro */
+    padding: 10px; /* Adiciona espaçamento interno */
+    border-radius: 5px; /* Arredonda as bordas */
+    font-weight: bold; /* Define o texto em negrito */
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Adiciona espaçamento interno */
+    background-color: #00796b; /* Define a cor de fundo */
+    color: #ffffff; /* Define a cor do texto */
+    width: 100%; /* Define a largura do rodapé */
+    position: absolute; /* Define o posicionamento absoluto */
+    bottom: 0; /* Alinha o rodapé ao fundo da página */
+}

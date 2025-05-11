@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM - Portfólio - Projetos</title>
+    <meta name="description" content="Conheça os projetos desenvolvidos por Rafael Martiniano.">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="../../assets/images/favicon.ico" type="image/x-icon">
+  </head>
+  <body class="terminal-theme">
+    <div class="background-gradient"></div>
+    <div class="computer">
+      <div class="computer-screen">
+        <!-- Botão de Desligar -->
+        <button class="close-button" aria-label="Desligar">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v10"></path>
+            <path d="M5.5 4.2A10 10 0 1 0 18.5 4.2"></path>
+          </svg>
+        </button>
+        <div class="terminal">
+            <div class="terminal-header">
+            <span class="terminal-title">Contato</span>
+        </div>
+        <div class="terminal-body">
+          <p class="terminal-line">C:\> Entre em contato para discutirmos como posso ajudar no seu projeto.</p>
+          <p class="terminal-line">C:\> Se você deseja saber mais sobre meus projetos, colaborar em algum desenvolvimento ou simplesmente trocar ideias sobre tecnologia, estou à disposição!</p>
+          <p class="terminal-line">C:\> Preencha o formulário abaixo e responderei o mais breve possível.</p>
+          <p class="terminal-line">C:\> Você também pode me encontrar no Linkedin.</p>
+          <p class="terminal-line">C:\ Ao preencher o formulário, você será redirecionado para o Linkedin.</p>
+          <p class="terminal-line">C:\ Fique a vontade para mandar mensagem e conhecer o meu perfil.</p>
+          <!-- Formulário de Contato -->
+          <form class="contact-form" id="contact-form">
+            <fieldset>
+              <legend>Informações de Contato</legend>
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+              <small class="error-message"></small>
+
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+              <small class="error-message"></small>
+
+              <label for="mensagem">Mensagem:</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui sua mensagem" required></textarea>
+              <small id="charCount">0/1000 caracteres</small>
+            </fieldset>
+
+            <button type="submit" class="btn-primary">Enviar</button>
+          </form>
+          <div class="terminal-links">
+            <a href="../../../index.html" class="btn-terminal">Página inicial</a>
+            <a href="../skills/skills.html" class="btn-terminal">Habilidades</a>
+            <a href="../projetos/projetos.html" class="btn-terminal">Projetos</a>
+            <a href="../sobre/sobre.html" class="btn-terminal">Sobre</a>
+          </div>
+        </div>
+      </div>
+      <div class="computer-base"></div>
+      <div class="computer-keyboard"></div>
+      <div class="computer-mouse"></div>
+    </div>
+
+    <script src="../../scripts/script.js"></script>
+    <script>
+      document.getElementById('contact-form').addEventListener('input', (e) => {
+    const input = e.target;
+    const errorMessage = input.nextElementSibling;
+
+    if (input.validity.valid) {
+        errorMessage.textContent = ''; // Limpa a mensagem de erro se o campo for válido
+    } else {
+        errorMessage.textContent = 'Por favor, preencha este campo corretamente.';
+        input.classList.add('error');
+    }
+});
+
+document.getElementById('contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome');
+    const email = document.getElementById('email');
+    const mensagem = document.getElementById('mensagem');
+
+    // Verificar se todos os campos estão válidos
+    if (nome.validity.valid && email.validity.valid && mensagem.validity.valid) {
+        alert('Formulário enviado com sucesso! Você será redirecionado ao LinkedIn para conclur envio da mensagem.');
+        window.location.href = 'https://www.linkedin.com/messaging/thread/new/?recipient=ACoAABPQu6cBXhEPNbS-e8RtwERnrFeO0Bjc2AU';
+    } else {
+        alert('Por favor, preencha todos os campos corretamente.');
+    }
+});
+    </script>
+  </body>
+</html>

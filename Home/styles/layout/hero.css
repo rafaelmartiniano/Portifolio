@@ -1,0 +1,190 @@
+/* Estilo da seção Hero */
+:root {
+  --gradient-primary: linear-gradient(135deg, #0077b5, #00aaff);
+  --gradient-secondary: linear-gradient(to right, #667eea, #764ba2);
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 20px;
+  background: var(--gradient-primary);
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../assets/images/particles.png'); /* Partículas */
+  opacity: 0.4;
+  animation: moveParticles 20s linear infinite;
+}
+
+@keyframes moveParticles {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+/* Hero Section */
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gradient-text {
+    background: var(--gradient-secondary);
+    -webkit-background-clip: text; /* Clipa o fundo ao texto */
+    background-clip: text; /* Clipa o fundo ao texto */
+    -webkit-text-fill-color: transparent; /* Preenche o texto com cor transparente */
+}
+
+.title-highlight {
+    color: var(--highlight-color); /* Cor de destaque */
+}
+
+.hero-content p {
+    font-size: 1.2em; /* Tamanho da fonte */
+    color: var(--text-color); /* Cor do texto */
+    margin-bottom: 30px; /* Margem inferior */
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color); /* Garante que o título seja sempre branco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: var(--text-color); /* Garante que o subtítulo seja sempre branco */
+}
+
+.highlight {
+    color: var(--project-color); /* Altera a cor do destaque para combinar com os projetos */
+}
+
+.typed-text {
+    display: inline-block;
+}
+
+.cursor {
+    display: inline-block;
+    background-color: var(--text-color);
+    width: 2px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    50.01%, 100% {
+        opacity: 0;
+    }
+}
+
+/* Introdução */
+.intro {
+    padding: 60px 0;
+    background: var(--background-color);
+    text-align: center;
+    color: var(--dark-text); /* Garante que o texto da introdução seja escuro */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+/* Efeito de fade-in */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Adicionando animações e transições */
+.hero-title, .hero-subtitle {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Seção Hero */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 20px;
+    background: var(--gradient-primary);
+    color: var(--text-color);
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/images/particles.png');
+    opacity: 0.4;
+    animation: moveParticles 20s linear infinite;
+  }
